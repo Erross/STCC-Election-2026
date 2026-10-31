@@ -1,0 +1,4223 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<NewDataSet>
+  <TotalBallotsCast>0</TotalBallotsCast>
+  <VoterTurnout>NaN%</VoterTurnout>
+  <RegisteredVoters>0</RegisteredVoters>
+  <GeneratedDate>2026-09-28T15:54:21.362-05:00</GeneratedDate>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>1</RaceID>
+    <RaceName>STATE AUDITOR</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>106</ContestantID>
+    <ContestantName>SCOTT FITZPATRICK</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>118</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>106</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>1</RaceID>
+    <RaceName>STATE AUDITOR</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>107</ContestantID>
+    <ContestantName>QUENTIN WILSON</ContestantName>
+    <Party>DEMOCRATIC PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>118</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>107</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>1</RaceID>
+    <RaceName>STATE AUDITOR</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>108</ContestantID>
+    <ContestantName>DUSTIN COFFELL</ContestantName>
+    <Party>LIBERTARIAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>118</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#f5d76e</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>108</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>1</RaceID>
+    <RaceName>STATE AUDITOR</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>109</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>118</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#6c7a89</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>109</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>2</RaceID>
+    <RaceName>US REPRESENTATIVE DISTRICT 2</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>139</ContestantID>
+    <ContestantName>ANN WAGNER</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>35</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>139</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>2</RaceID>
+    <RaceName>US REPRESENTATIVE DISTRICT 2</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>140</ContestantID>
+    <ContestantName>FRED WELLMAN</ContestantName>
+    <Party>DEMOCRATIC PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>35</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>140</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>2</RaceID>
+    <RaceName>US REPRESENTATIVE DISTRICT 2</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>141</ContestantID>
+    <ContestantName>BRANDON COULTER DAUGHERTY</ContestantName>
+    <Party>LIBERTARIAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>35</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#f5d76e</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>141</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>2</RaceID>
+    <RaceName>US REPRESENTATIVE DISTRICT 2</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>142</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>35</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#6c7a89</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>142</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>3</RaceID>
+    <RaceName>US REPRESENTATIVE DISTRICT 3</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>109</ContestantID>
+    <ContestantName>BOB ONDER</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>90</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>109</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>3</RaceID>
+    <RaceName>US REPRESENTATIVE DISTRICT 3</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>110</ContestantID>
+    <ContestantName>BETHANY E MANN</ContestantName>
+    <Party>DEMOCRATIC PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>90</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>110</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>3</RaceID>
+    <RaceName>US REPRESENTATIVE DISTRICT 3</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>111</ContestantID>
+    <ContestantName>JIM HIGGINS</ContestantName>
+    <Party>LIBERTARIAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>90</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#f5d76e</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>111</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>3</RaceID>
+    <RaceName>US REPRESENTATIVE DISTRICT 3</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>112</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>90</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#6c7a89</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>112</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>4</RaceID>
+    <RaceName>STATE SENATOR DISTRICT 2</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>112</ContestantID>
+    <ContestantName>NICK SCHROER</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>59</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>112</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>4</RaceID>
+    <RaceName>STATE SENATOR DISTRICT 2</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>114</ContestantID>
+    <ContestantName>SUSAN SHUMWAY</ContestantName>
+    <Party>DEMOCRATIC PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>59</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>114</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>4</RaceID>
+    <RaceName>STATE SENATOR DISTRICT 2</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>115</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>59</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#f5d76e</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>115</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>5</RaceID>
+    <RaceName>STATE SENATOR DISTRICT 10</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>113</ContestantID>
+    <ContestantName>MIKE DEERING</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>18</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>113</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>5</RaceID>
+    <RaceName>STATE SENATOR DISTRICT 10</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>115</ContestantID>
+    <ContestantName>JOHN WELLS</ContestantName>
+    <Party>DEMOCRATIC PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>18</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>115</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>5</RaceID>
+    <RaceName>STATE SENATOR DISTRICT 10</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>116</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>18</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#f5d76e</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>116</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>6</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 63</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>116</ContestantID>
+    <ContestantName>TONY LOVASCO</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>14</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>116</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>6</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 63</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>128</ContestantID>
+    <ContestantName>DONALD R LOONEY JR</ContestantName>
+    <Party>DEMOCRATIC PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>14</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>128</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>6</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 63</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>129</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>14</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#f5d76e</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>129</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>7</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 64</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>117</ContestantID>
+    <ContestantName>DEANNA SELF</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>18</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>117</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>7</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 64</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>129</ContestantID>
+    <ContestantName>AMBER TESON</ContestantName>
+    <Party>DEMOCRATIC PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>18</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>129</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>7</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 64</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>130</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>18</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#f5d76e</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>130</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>8</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 65</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>118</ContestantID>
+    <ContestantName>WENDY L. HAUSMAN</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>22</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>118</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>8</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 65</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>130</ContestantID>
+    <ContestantName>DALE CONOYER</ContestantName>
+    <Party>DEMOCRATIC PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>22</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>130</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>8</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 65</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>131</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>22</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#f5d76e</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>131</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>9</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 69</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>119</ContestantID>
+    <ContestantName>SCOTT MILLER</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>14</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>119</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>9</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 69</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>131</ContestantID>
+    <ContestantName>CHRIS CHAPMAN</ContestantName>
+    <Party>DEMOCRATIC PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>14</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>131</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>9</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 69</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>132</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>14</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#f5d76e</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>132</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>10</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 102</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>120</ContestantID>
+    <ContestantName>RICHARD W WEST</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>22</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>120</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>10</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 102</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>132</ContestantID>
+    <ContestantName>DAVID ROGERS</ContestantName>
+    <Party>DEMOCRATIC PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>22</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>132</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>10</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 102</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>133</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>22</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#f5d76e</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>133</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>11</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 103</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>121</ContestantID>
+    <ContestantName>DAVE HINMAN</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>20</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>121</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>11</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 103</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>133</ContestantID>
+    <ContestantName>DON CROZIER</ContestantName>
+    <Party>DEMOCRATIC PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>20</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>133</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>11</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 103</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>134</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>20</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#f5d76e</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>134</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>12</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 104</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>122</ContestantID>
+    <ContestantName>TERRI VIOLET</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>15</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>122</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>12</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 104</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>134</ContestantID>
+    <ContestantName>TARA MURRAY</ContestantName>
+    <Party>DEMOCRATIC PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>15</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>134</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>12</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 104</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>135</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>15</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#f5d76e</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>135</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>13</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 105</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>123</ContestantID>
+    <ContestantName>COLIN WELLENKAMP</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>14</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>123</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>13</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 105</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>135</ContestantID>
+    <ContestantName>CAT CLAYTON</ContestantName>
+    <Party>DEMOCRATIC PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>14</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>135</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>13</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 105</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>136</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>14</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#f5d76e</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>136</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>14</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 106</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>124</ContestantID>
+    <ContestantName>TRAVIS WILSON</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>17</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>124</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>14</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 106</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>136</ContestantID>
+    <ContestantName>JEWEL KELLY</ContestantName>
+    <Party>DEMOCRATIC PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>17</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>136</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>14</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 106</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>137</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>17</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#f5d76e</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>137</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>15</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 107</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>125</ContestantID>
+    <ContestantName>MARK MATTHIESEN</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>20</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>125</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>15</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 107</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>137</ContestantID>
+    <ContestantName>GARY WESTER</ContestantName>
+    <Party>DEMOCRATIC PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>20</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>137</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>15</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 107</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>138</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>20</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#f5d76e</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>138</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>16</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 108</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>126</ContestantID>
+    <ContestantName>MIKE COSTLOW</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>16</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>126</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>16</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 108</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>138</ContestantID>
+    <ContestantName>STEPHEN SCOTT</ContestantName>
+    <Party>DEMOCRATIC PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>16</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>138</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>16</RaceID>
+    <RaceName>STATE REPRESENTATIVE DISTRICT 108</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>139</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>16</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#f5d76e</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>139</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>17</RaceID>
+    <RaceName>CIRCUIT JUDGE CIRCUIT 11 DIVISION 1</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>127</ContestantID>
+    <ContestantName>BRITTNEY R. SMITH</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>118</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>127</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>17</RaceID>
+    <RaceName>CIRCUIT JUDGE CIRCUIT 11 DIVISION 1</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>128</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>118</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>128</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>18</RaceID>
+    <RaceName>ASSOCIATE CIRCUIT JUDGE CIRCUIT 11 DIVISION 6</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>142</ContestantID>
+    <ContestantName>TRISHA ELIZABETH MCCULLOCH</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>142</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>18</RaceID>
+    <RaceName>ASSOCIATE CIRCUIT JUDGE CIRCUIT 11 DIVISION 6</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>143</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>143</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>19</RaceID>
+    <RaceName>ASSOCIATE CIRCUIT JUDGE CIRCUIT 11 DIVISION 8</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>143</ContestantID>
+    <ContestantName>PETER A LASSITER</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>143</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>19</RaceID>
+    <RaceName>ASSOCIATE CIRCUIT JUDGE CIRCUIT 11 DIVISION 8</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>144</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>144</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>20</RaceID>
+    <RaceName>ASSOCIATE CIRCUIT JUDGE CIRCUIT 11 DIVISION 9</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>144</ContestantID>
+    <ContestantName>JEFF SANDCORK</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>144</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>20</RaceID>
+    <RaceName>ASSOCIATE CIRCUIT JUDGE CIRCUIT 11 DIVISION 9</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>145</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>145</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>21</RaceID>
+    <RaceName>ASSOCIATE CIRCUIT JUDGE CIRCUIT 11 DIVISION 10</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>145</ContestantID>
+    <ContestantName>DENNIS CHASSANIOL</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>145</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>21</RaceID>
+    <RaceName>ASSOCIATE CIRCUIT JUDGE CIRCUIT 11 DIVISION 10</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>146</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>146</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>22</RaceID>
+    <RaceName>ASSOCIATE CIRCUIT JUDGE CIRCUIT 11 DIVISION 11</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>146</ContestantID>
+    <ContestantName>DENISE L CHILDRESS</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>146</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>22</RaceID>
+    <RaceName>ASSOCIATE CIRCUIT JUDGE CIRCUIT 11 DIVISION 11</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>147</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>147</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>23</RaceID>
+    <RaceName>ASSOCIATE CIRCUIT JUDGE CIRCUIT 11 DIVISION 12</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>147</ContestantID>
+    <ContestantName>WILLIAM BYRNES</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>147</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>23</RaceID>
+    <RaceName>ASSOCIATE CIRCUIT JUDGE CIRCUIT 11 DIVISION 12</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>148</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>148</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>24</RaceID>
+    <RaceName>COUNTY EXECUTIVE</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>148</ContestantID>
+    <ContestantName>STEVE EHLMANN</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>148</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>24</RaceID>
+    <RaceName>COUNTY EXECUTIVE</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>149</ContestantID>
+    <ContestantName>DAVID VENEZIANO</ContestantName>
+    <Party>DEMOCRATIC PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>149</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>24</RaceID>
+    <RaceName>COUNTY EXECUTIVE</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>150</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#f5d76e</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>150</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>25</RaceID>
+    <RaceName>DIRECTOR OF ELECTIONS</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>150</ContestantID>
+    <ContestantName>KURT BAHR</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>150</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>25</RaceID>
+    <RaceName>DIRECTOR OF ELECTIONS</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>151</ContestantID>
+    <ContestantName>CARL HERMAN FREESE</ContestantName>
+    <Party>LIBERTARIAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>151</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>25</RaceID>
+    <RaceName>DIRECTOR OF ELECTIONS</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>152</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#f5d76e</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>152</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>26</RaceID>
+    <RaceName>RECORDER OF DEEDS</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>152</ContestantID>
+    <ContestantName>MARY E DEMPSEY</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>152</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>26</RaceID>
+    <RaceName>RECORDER OF DEEDS</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>153</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>153</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>27</RaceID>
+    <RaceName>PROSECUTING ATTORNEY</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>153</ContestantID>
+    <ContestantName>JOSEPH G MCCULLOCH</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>153</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>27</RaceID>
+    <RaceName>PROSECUTING ATTORNEY</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>154</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>154</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>28</RaceID>
+    <RaceName>COLLECTOR OF REVENUE</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>154</ContestantID>
+    <ContestantName>MICHELLE D MCBRIDE</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>154</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>28</RaceID>
+    <RaceName>COLLECTOR OF REVENUE</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>155</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>155</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>29</RaceID>
+    <RaceName>COUNTY SHERIFF</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>155</ContestantID>
+    <ContestantName>SCOTT A LEWIS</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>155</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>29</RaceID>
+    <RaceName>COUNTY SHERIFF</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>156</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>156</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>30</RaceID>
+    <RaceName>COUNTY ASSESSOR</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>156</ContestantID>
+    <ContestantName>TRAVIS WELGE</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>156</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>30</RaceID>
+    <RaceName>COUNTY ASSESSOR</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>157</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>157</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>31</RaceID>
+    <RaceName>COUNTY COUNCIL DISTRICT 1</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>157</ContestantID>
+    <ContestantName>MATT SWANSON</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>17</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>157</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>31</RaceID>
+    <RaceName>COUNTY COUNCIL DISTRICT 1</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>158</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>17</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>158</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>32</RaceID>
+    <RaceName>COUNTY COUNCIL DISTRICT 3</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>158</ContestantID>
+    <ContestantName>MIKE ELAM</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>21</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>158</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>32</RaceID>
+    <RaceName>COUNTY COUNCIL DISTRICT 3</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>159</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>21</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>159</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>33</RaceID>
+    <RaceName>COUNTY COUNCIL DISTRICT 5</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>159</ContestantID>
+    <ContestantName>TERRY HOLLANDER</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>19</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>159</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>33</RaceID>
+    <RaceName>COUNTY COUNCIL DISTRICT 5</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>160</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>19</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>160</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>34</RaceID>
+    <RaceName>COUNTY COUNCIL DISTRICT 7</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>160</ContestantID>
+    <ContestantName>TIM BAKER</ContestantName>
+    <Party>REPUBLICAN PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>16</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>160</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>34</RaceID>
+    <RaceName>COUNTY COUNCIL DISTRICT 7</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>161</ContestantID>
+    <ContestantName>MONICA BALESTRERI</ContestantName>
+    <Party>DEMOCRATIC PARTY</Party>
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>16</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>161</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>34</RaceID>
+    <RaceName>COUNTY COUNCIL DISTRICT 7</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>162</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>16</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#f5d76e</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>162</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>35</RaceID>
+    <RaceName>ST. CHARLES COUNCIL MEMBER WARD 4 UNEXPIRED TERM</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>162</ContestantID>
+    <ContestantName>TOM BRUENING</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>6</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>162</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>35</RaceID>
+    <RaceName>ST. CHARLES COUNCIL MEMBER WARD 4 UNEXPIRED TERM</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>163</ContestantID>
+    <ContestantName>BRETT LARKIN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>6</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>163</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>35</RaceID>
+    <RaceName>ST. CHARLES COUNCIL MEMBER WARD 4 UNEXPIRED TERM</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>164</ContestantID>
+    <ContestantName>STEVEN FELDER</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>6</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#f5d76e</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>164</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>35</RaceID>
+    <RaceName>ST. CHARLES COUNCIL MEMBER WARD 4 UNEXPIRED TERM</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>165</ContestantID>
+    <ContestantName>WRITE-IN</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>6</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#6c7a89</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>165</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>36</RaceID>
+    <RaceName>RETAIN SUPREME COURT JUDGE PAUL C. WILSON</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>165</ContestantID>
+    <ContestantName>YES</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>118</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>165</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>36</RaceID>
+    <RaceName>RETAIN SUPREME COURT JUDGE PAUL C. WILSON</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>166</ContestantID>
+    <ContestantName>NO</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>118</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>166</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>37</RaceID>
+    <RaceName>RETAIN EASTERN DISTRICT COURT OF APPEALS JUDGE VIRGINIA W. LAY</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>167</ContestantID>
+    <ContestantName>YES</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>118</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>167</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>37</RaceID>
+    <RaceName>RETAIN EASTERN DISTRICT COURT OF APPEALS JUDGE VIRGINIA W. LAY</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>168</ContestantID>
+    <ContestantName>NO</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>118</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>168</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>38</RaceID>
+    <RaceName>RETAIN EASTERN DISTRICT COURT OF APPEALS JUDGE REBECA NAVARRO-McKELVEY</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>169</ContestantID>
+    <ContestantName>YES</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>118</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>169</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>38</RaceID>
+    <RaceName>RETAIN EASTERN DISTRICT COURT OF APPEALS JUDGE REBECA NAVARRO-McKELVEY</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>170</ContestantID>
+    <ContestantName>NO</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>118</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>170</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>39</RaceID>
+    <RaceName>RETAIN EASTERN DISTRICT COURT OF APPEALS JUDGE ANGELA TURNER QUIGLESS</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>171</ContestantID>
+    <ContestantName>YES</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>118</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>171</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>39</RaceID>
+    <RaceName>RETAIN EASTERN DISTRICT COURT OF APPEALS JUDGE ANGELA TURNER QUIGLESS</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>172</ContestantID>
+    <ContestantName>NO</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>118</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>172</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>40</RaceID>
+    <RaceName>CONSTITUTIONAL AMENDMENT NO. 3</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>100</ContestantID>
+    <ContestantName>YES</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>118</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>100</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>40</RaceID>
+    <RaceName>CONSTITUTIONAL AMENDMENT NO. 3</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>101</ContestantID>
+    <ContestantName>NO</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>118</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>101</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>41</RaceID>
+    <RaceName>CONSTITUTIONAL AMENDMENT NO. 6</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>173</ContestantID>
+    <ContestantName>YES</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>118</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>173</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>41</RaceID>
+    <RaceName>CONSTITUTIONAL AMENDMENT NO. 6</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>174</ContestantID>
+    <ContestantName>NO</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>118</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>174</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>42</RaceID>
+    <RaceName>CONSTITUTIONAL AMENDMENT NO. 7</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>102</ContestantID>
+    <ContestantName>YES</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>118</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>102</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>42</RaceID>
+    <RaceName>CONSTITUTIONAL AMENDMENT NO. 7</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>103</ContestantID>
+    <ContestantName>NO</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>118</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>103</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>43</RaceID>
+    <RaceName>CONSTITUTIONAL AMENDMENT NO. 8</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>104</ContestantID>
+    <ContestantName>YES</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>118</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>104</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>43</RaceID>
+    <RaceName>CONSTITUTIONAL AMENDMENT NO. 8</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>105</ContestantID>
+    <ContestantName>NO</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>118</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>105</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>44</RaceID>
+    <RaceName>PROPOSITION A</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>175</ContestantID>
+    <ContestantName>YES</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>118</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>175</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>44</RaceID>
+    <RaceName>PROPOSITION A</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>176</ContestantID>
+    <ContestantName>NO</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>118</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>176</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>45</RaceID>
+    <RaceName>ST. CHARLES AMBULANCE PROPOSITION PARAMEDICS</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>177</ContestantID>
+    <ContestantName>YES</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>177</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>45</RaceID>
+    <RaceName>ST. CHARLES AMBULANCE PROPOSITION PARAMEDICS</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>178</ContestantID>
+    <ContestantName>NO</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>117</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>178</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>46</RaceID>
+    <RaceName>ORCHARD FARM R-V PROPOSITION T</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>179</ContestantID>
+    <ContestantName>YES</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>8</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>179</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>46</RaceID>
+    <RaceName>ORCHARD FARM R-V PROPOSITION T</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>180</ContestantID>
+    <ContestantName>NO</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>8</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>180</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>47</RaceID>
+    <RaceName>FRANCIS HOWELL R-III PROPOSITION H</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>181</ContestantID>
+    <ContestantName>YES</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>40</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>181</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>47</RaceID>
+    <RaceName>FRANCIS HOWELL R-III PROPOSITION H</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>182</ContestantID>
+    <ContestantName>NO</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>40</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>182</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>48</RaceID>
+    <RaceName>FRANCIS HOWELL R-III PROPOSITION O</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>183</ContestantID>
+    <ContestantName>YES</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>40</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>183</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>48</RaceID>
+    <RaceName>FRANCIS HOWELL R-III PROPOSITION O</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>184</ContestantID>
+    <ContestantName>NO</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>40</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>184</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>49</RaceID>
+    <RaceName>FORT ZUMWALT R-II PROPOSITION 1</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>185</ContestantID>
+    <ContestantName>YES</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>50</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>185</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>49</RaceID>
+    <RaceName>FORT ZUMWALT R-II PROPOSITION 1</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>186</ContestantID>
+    <ContestantName>NO</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>50</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>186</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>50</RaceID>
+    <RaceName>CENTRAL COUNTY FIRE AND RESCUE PROPOSITION T</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>187</ContestantID>
+    <ContestantName>YES</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>44</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#87d37c</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>187</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+  <Table>
+    <ElectionID>33</ElectionID>
+    <RaceID>50</RaceID>
+    <RaceName>CENTRAL COUNTY FIRE AND RESCUE PROPOSITION T</RaceName>
+    <VoteFor>1</VoteFor>
+    <NumPositions>1</NumPositions>
+    <NonPartisanRace>N</NonPartisanRace>
+    <ContestWithdrawn>N</ContestWithdrawn>
+    <RunOff>N</RunOff>
+    <MajorPercent>1</MajorPercent>
+    <MinimumVotes>0</MinimumVotes>
+    <ContestantID>188</ContestantID>
+    <ContestantName>NO</ContestantName>
+    <Party />
+    <PartyName />
+    <EarlyVotingVotes>0</EarlyVotingVotes>
+    <AbsenteeVotes>0</AbsenteeVotes>
+    <ElectionDayVotes>0</ElectionDayVotes>
+    <ProvisionalVotes>0</ProvisionalVotes>
+    <Votes>0</Votes>
+    <TotalVotes>0</TotalVotes>
+    <NumberOfPrec>44</NumberOfPrec>
+    <PrecReported>0</PrecReported>
+    <TimesCounted>0</TimesCounted>
+    <BlankVoted>0</BlankVoted>
+    <OverVotes>0</OverVotes>
+    <UnderVotes>0</UnderVotes>
+    <ContestantColor>#81cfe0</ContestantColor>
+    <ContestantWithdrawn>N</ContestantWithdrawn>
+    <ContestantVotePercent>0.00%</ContestantVotePercent>
+    <ContestantSeqNoExt>188</ContestantSeqNoExt>
+    <ContestantWriteIn>N</ContestantWriteIn>
+    <ContestantWinner>N</ContestantWinner>
+  </Table>
+</NewDataSet>

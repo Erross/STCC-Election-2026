@@ -1,0 +1,37 @@
+{
+  "name": "stcc-election-2026",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "worker:dev": "wrangler dev --config wrangler.jsonc --ip 127.0.0.1",
+    "worker:build": "wrangler deploy --config wrangler.jsonc --dry-run --outdir dist-worker",
+    "worker:configure": "node scripts/configure-worker.mjs",
+    "worker:migrate": "node scripts/deploy-worker.mjs migrate",
+    "worker:deploy": "node scripts/deploy-worker.mjs deploy"
+  },
+  "dependencies": {
+    "fast-xml-parser": "5.11.2",
+    "leaflet": "1.9.4",
+    "lucide-react": "1.31.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20260515.1",
+    "@types/leaflet": "1.9.22",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
+    "typescript": "5.9.3",
+    "vite": "8.0.13",
+    "wrangler": "4.92.0"
+  }
+}
