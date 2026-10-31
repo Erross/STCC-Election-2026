@@ -23,11 +23,7 @@ jobs:
         run: npm run worker:migrate
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
-          CLOUDFLARE_DATABASE_ID: ${{ vars.CLOUDFLARE_DATABASE_ID }}
       - name: Deploy new STCC Worker
         run: npm run worker:deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
-          CLOUDFLARE_DATABASE_ID: ${{ vars.CLOUDFLARE_DATABASE_ID }}
