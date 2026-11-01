@@ -42,3 +42,5 @@ See [operations](docs/OPERATIONS.md), [validation](docs/VALIDATION.md) and [attr
 ## Historical precinct benchmarks
 
 H/O include 2024–2026 school-board slate comparisons. Other contests offer verified 2024/2022 D/R race averages and same-office results where available. Statewide measures use sourced party positions; local questions without verified endorsements are labeled descriptive comparisons. Maps, tables and comparison CSVs show share variance in percentage points, with no swing inferred before votes arrive. See [sources and methodology](docs/HISTORICAL-COMPARISONS.md).
+
+The election selector also opens completed 2023–2026 FH school-board races and the verified 2024/2022 D/R race archives. Pick the displayed election, then a different comparison year. On phones, use the bottom navigation and expandable precinct results; the same URL works in mobile browsers and in-app web views.

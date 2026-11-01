@@ -70,6 +70,34 @@
         "candidates": []
       },
       "winner": "fh_forward"
+    },
+    "2023": {
+      "seats": 3,
+      "fh_forward": {
+        "label": "FH Forward",
+        "candidates": [
+          "DOUG ZIEGEMEIER",
+          "AMY EASTERLING",
+          "HARRY HARRIS"
+        ]
+      },
+      "fh_families": {
+        "label": "FH Families",
+        "candidates": [
+          "JANE PUSZKAR",
+          "MARK PONDER",
+          "RON HARMON"
+        ]
+      },
+      "independent": {
+        "candidates": [
+          "ANDREW FLETT"
+        ]
+      },
+      "sources": [
+        "https://francishowellfamilies.org/we-must-be-doing-something-right/",
+        "https://stcharlesgop.com/sccrcc-endorses-candidates-for-2023-board-of-education-election/"
+      ]
     }
   },
   "notes": {

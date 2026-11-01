@@ -1,8 +1,8 @@
 import type { Contest, ResultUnit } from './types.ts';
 export type Pair = [number, number]; // Democratic/progressive first; Republican/conservative second.
-export type HistoricalRace = { name: string; units: Record<string, Pair>; pages: number[]; totals: Pair };
+export type HistoricalRace = { name: string; units: Record<string, Pair>; pages: number[]; totals: Pair; candidates: [string, string]; allUnits: Record<string, Pair> };
 export type GeneralHistory = { year: string; source: string; sha256: string; boundaryMatch: boolean; races: HistoricalRace[] };
-export type SchoolHistory = { year: string; source: string; candidates: { progressive: string[]; conservative: string[] }; units: Record<string, Pair> };
+export type SchoolHistory = { year: string; date: string; boundaryMatch: boolean; archive: { candidates: string[]; units: Record<string, number[]>; totals: number[]; voteFor: number }; source: string; candidates: { progressive: string[]; conservative: string[] }; units: Record<string, Pair> };
 export type Benchmarks = { schemaVersion: 1; general: GeneralHistory[]; school: SchoolHistory[] };
 export type BenchmarkOption = { id: string; label: string; kind: 'school' | 'average' | 'office'; year: string; sourceName?: string };
 export type Alignment = 'first' | 'second';
@@ -21,11 +21,19 @@ export const POSITIONS: Record<string, { democratic: 'YES' | 'NO'; republican: '
 };
 const norm = (s: string) => s.toUpperCase().replace(/[^A-Z0-9]/g, '');
 export const isHowellMeasure = (c: Contest) => /^FRANCIS HOWELL R-III PROPOSITION [HO]$/.test(c.sourceName);
-export function benchmarkOptions(c: Contest, history: Benchmarks): BenchmarkOption[] {
+export const isHowellBoard = (c: Contest) => c.sourceName === 'FRANCIS HOWELL R-III SCHOOL BOARD MEMBER';
+export function benchmarkOptions(c: Contest, history: Benchmarks, currentDate = '2026-11-03'): BenchmarkOption[] {
   const options: BenchmarkOption[] = [];
-  if (isHowellMeasure(c)) for (const school of history.school) options.push({ id: `school-${school.year}`, label: `School board ${school.year} · slate share`, kind: 'school', year: school.year });
+  const currentYear = currentDate.slice(0, 4);
+  if (isHowellMeasure(c) || isHowellBoard(c)) {
+    const schools = history.school.filter(s => !isHowellBoard(c) || s.date !== currentDate);
+    if (isHowellBoard(c)) schools.sort((a, b) => (Number(b.year < currentYear) - Number(a.year < currentYear)) || (a.year < currentYear ? Number(b.year) - Number(a.year) : Number(a.year) - Number(b.year)));
+    for (const school of schools) options.push({ id: `school-${school.year}`, label: `April ${school.year} · school-board slates${school.boundaryMatch ? '' : ' · approximate*'}`, kind: 'school', year: school.year });
+  }
+  if (isHowellBoard(c)) return options;
   for (const general of history.general) {
-    const caveat = general.boundaryMatch ? '' : ' · precinct IDs only*';
+    if (currentDate.slice(5, 7) === '11' && general.year === currentYear) continue;
+    const caveat = general.boundaryMatch ? '' : ' · approximate*';
     if (c.type === 'candidate' && general.races.some(r => norm(r.name) === norm(c.sourceName))) options.push({ id: `office-${general.year}`, label: `${general.year} same office${caveat}`, kind: 'office', year: general.year, sourceName: c.sourceName });
     options.push({ id: `average-${general.year}`, label: `${general.year} D/R race average${caveat}`, kind: 'average', year: general.year });
   }
@@ -44,7 +52,12 @@ export function baselineFor(history: Benchmarks, option: BenchmarkOption, pid: s
   if (!valid.length) return { share: null, races: [] };
   return { share: valid.reduce((sum, r) => { const p = r.units[pid]; return sum + p[alignment === 'first' ? 0 : 1] / (p[0] + p[1]); }, 0) / valid.length, races: valid.map(r => r.name) };
 }
-export function currentTarget(c: Contest, option: BenchmarkOption, alignment: Alignment) {
+export function currentTarget(c: Contest, option: BenchmarkOption, alignment: Alignment, history?: Benchmarks, currentYear = '2026') {
+  if (isHowellBoard(c)) {
+    const school = history?.school.find(s => s.year === currentYear); const names = school?.candidates[alignment === 'first' ? 'progressive' : 'conservative'] ?? [];
+    const both = [...school?.candidates.progressive ?? [], ...school?.candidates.conservative ?? []];
+    return { numerator: c.choices.filter(x => names.includes(x.name)).map(x => x.id), denominator: c.choices.filter(x => both.includes(x.name)).map(x => x.id), label: alignment === 'first' ? 'FH Forward share' : 'FH Families share', available: names.length > 0 };
+  }
   if (c.type === 'candidate') {
     const party = alignment === 'first' ? 'DEMOCRATIC' : 'REPUBLICAN';
     const numerator = c.choices.filter(x => x.party?.includes(party)).map(x => x.id);
@@ -56,8 +69,8 @@ export function currentTarget(c: Contest, option: BenchmarkOption, alignment: Al
   const side = option.kind === 'school' || !position ? 'YES' : position[alignment === 'first' ? 'democratic' : 'republican'];
   return { numerator: c.choices.filter(x => x.name.toUpperCase() === side).map(x => x.id), denominator: c.choices.filter(x => /^(YES|NO)$/.test(x.name.toUpperCase())).map(x => x.id), label: `${side === 'YES' ? 'Yes' : 'No'} share`, available: true };
 }
-export function buildComparisons(c: Contest, history: Benchmarks, option: BenchmarkOption, alignment: Alignment): Record<string, Comparison> {
-  const target = currentTarget(c, option, alignment); const result: Record<string, Comparison> = {};
+export function buildComparisons(c: Contest, history: Benchmarks, option: BenchmarkOption, alignment: Alignment, currentDate = '2026-11-03'): Record<string, Comparison> {
+  const target = currentTarget(c, option, alignment, history, currentDate.slice(0, 4)); const result: Record<string, Comparison> = {};
   for (const u of c.units) {
     const b = u.geographic ? baselineFor(history, option, u.id, alignment) : { share: null, races: [] };
     const votes = target.denominator.reduce((n, id) => n + (u.votes[id] ?? 0), 0);
