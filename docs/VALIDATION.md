@@ -36,3 +36,9 @@ November data currently contain no votes. April nonzero replay validates schema 
 The portable version passes all 18 tests and TypeScript checks. Five additional tests execute application SQL against real in-memory SQLite through a D1-shaped adapter and verify cross-origin ETag/preflight, shared rate limiting across page and scheduled requests, last-good retention after source mismatch, persisted completion across all automatic collection paths, and read-only health behavior.
 
 Both a Vite production build using `/STCC-Election-2026/` and a standalone Wrangler Worker dry run passed. The earlier browser and private-host deployment checks above apply to the predecessor. GitHub Pages publication, the new Cloudflare deployment, cross-origin production network access and its scheduled trigger remain unverified until account setup and publication complete.
+
+## Archived comparisons and mobile usability
+
+All 28 tests pass, including complete archived school candidate totals, explicit absentee preservation, 2023 verified slate membership, cross-year comparison direction, same-year exclusion, and labeled two-party general archives. TypeScript, Pages production build and Worker dry-run pass. The historical data builder reconciles both general PDFs, cross-checks all 1,972 geographic 2024 D/R cells, and reconciles the complete 2023 school PDF including write-ins.
+
+Browser QA at 360 px and 390 px phone widths and 768 px tablet width checks election switching, 2025-to-2024 and 2023-to-2024 published comparisons, large controls, bottom navigation, keyboard drawer dismissal, direct precinct selection, expandable precinct cards, and no page-level horizontal overflow. Desktop retains its table and sidebar. Narrow-screen validation uses real iframe viewports; actual iOS/Android hardware was not available. The deliverable is a responsive web app, not a separate native app.

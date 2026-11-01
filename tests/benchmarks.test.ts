@@ -77,3 +77,46 @@ test('audited catalog has only geographic integer counts and certified check tot
     assert.match(id, /^\d{3}$/); assert.ok(pair.every(v => Number.isSafeInteger(v) && v >= 0));
   }
 });
+
+test('archived school races reconcile every candidate and preserve special reporting units', async () => {
+  const { makeArchiveSnapshot } = await import('../lib/election/archives.ts');
+  for (const school of history.school) {
+    const snapshot = makeArchiveSnapshot(`school-${school.year}`, history, seed)!;
+    assert.equal(snapshot.electionId, school.date); assert.equal(snapshot.contests.length, 1);
+    const board = snapshot.contests[0];
+    assert.equal(board.totalVotes, board.choices.reduce((n, c) => n + c.votes, 0));
+    assert.ok(board.units.some(u => u.id === 'ABSENTEE' && !u.geographic));
+    for (const c of board.choices) assert.equal(c.votes, board.units.reduce((n, u) => n + u.votes[c.id], 0));
+    const options = benchmarkOptions(board, history, school.date);
+    assert.ok(options.length >= 3); assert.ok(options.every(o => o.kind === 'school' && o.year !== school.year));
+    if (school.year === '2025' || school.year === '2023') assert.equal(options[0].year, '2024');
+    const rows = buildComparisons(board, history, options[0], 'first', school.date);
+    assert.ok(summarizeComparisons(rows).matched >= 35); assert.ok(summarizeComparisons(rows).delta != null);
+    const reverse = buildComparisons(board, history, options[0], 'second', school.date);
+    const pid = Object.keys(rows).find(id => rows[id].delta != null)!;
+    near(rows[pid].current! + reverse[pid].current!, 1); near(rows[pid].delta!, -reverse[pid].delta!);
+    assert.equal(rows.ABSENTEE.delta, null);
+  }
+});
+test('2023 uses certified PDF votes and verified slate membership, not conflicting legacy cached metadata', () => {
+  const school = history.school.find(s => s.year === '2023')!;
+  assert.ok(school.candidates.progressive.includes('DOUG ZIEGEMEIER')); assert.ok(!school.candidates.progressive.includes('ANDREW FLETT'));
+  assert.equal(school.boundaryMatch, false); assert.deepEqual(school.units['213'], [255, 741]);
+  assert.equal(school.archive.totals[school.archive.candidates.indexOf('JANE PUSZKAR')], 9023);
+  assert.ok(school.archive.units['CENTRAL 2']);
+});
+test('archived general races retain only their explicitly labeled D/R choices and compare across elections', async () => {
+  const { makeArchiveSnapshot } = await import('../lib/election/archives.ts');
+  const snapshot = makeArchiveSnapshot('general-2024', history, seed)!;
+  assert.equal(snapshot.contests.length, 18);
+  for (const c of snapshot.contests) {
+    assert.equal(c.choices.length, 2); assert.ok(c.choices.every(x => x.name && x.party));
+    for (const x of c.choices) assert.equal(x.votes, c.units.reduce((n, u) => n + u.votes[x.id], 0));
+    assert.ok(benchmarkOptions(c, history, snapshot.date).every(o => o.year !== '2024'));
+  }
+  const house = snapshot.contests.find(c => c.sourceName === 'US REPRESENTATIVE DISTRICT 2')!;
+  const option = benchmarkOptions(house, history, snapshot.date).find(o => o.kind === 'office')!;
+  assert.equal(option.year, '2022');
+  assert.ok(summarizeComparisons(buildComparisons(house, history, option, 'first', snapshot.date)).matched >= 30);
+  assert.equal(makeArchiveSnapshot('unknown-year', history, seed), null);
+});

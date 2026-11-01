@@ -33,6 +33,8 @@ def pdf_races(year):
   if len(totals)!=1:raise ValueError('Ambiguous total column')
   first=float(totals[0].get('xMin'))+33
   starts={p:first+66*int((float(ws[0].get('xMin'))-first+1)//66) for p,ws in party.items()}
+  names=[' '.join(w.text for w in sorted(words,key=lambda w:(float(w.get('yMin')),float(w.get('xMin')))) if 130<float(w.get('yMin'))<163 and starts[p]-1<=float(w.get('xMin'))<starts[p]+65 and not re.fullmatch(r'\([A-Z]+\)',w.text or '')) for p in ['DEM','REP']]
+  race['candidates']=names
   ids=[w for w in words if float(w.get('xMin'))<50 and float(w.get('yMin'))>160 and (re.fullmatch(r'\d{3}',w.text or '') or w.text in ['Total','ABSENTEE','CENTRAL'])]
   for label in ids:
    y=float(label.get('yMin')); row=[w for w in words if abs(float(w.get('yMin'))-y)<1]
@@ -55,6 +57,7 @@ def pdf_races(year):
   if r['totals'] is None: raise ValueError(f'Missing total {name}')
   sums=[sum(v[i] for v in r['units'].values()) for i in [0,1]]
   if sums!=r['totals']: raise ValueError(f'PDF sums do not reconcile {year} {name}: {sums} vs {r["totals"]}')
+  r['allUnits']=r['units'].copy()
   r['units']={p:v for p,v in r['units'].items() if p.isdigit()}
   if not any(v[0] for v in r['units'].values()) or not any(v[1] for v in r['units'].values()): raise ValueError('Non-contested race')
  if year=='2024':
@@ -110,10 +113,67 @@ def school(year,source_id):
  geometry=download(base+f'stcharlesmoenr_{source_id}.txt',CACHE/f'geometry-{source_id}.json')
  expected='54129bd9046795838ce5990bc8acfbf6540f214512b805cca66cacec12d71e85'
  if hashlib.sha256(geometry.read_bytes()).hexdigest()!=expected:raise ValueError('School boundary change')
- return {'year':year,'source':base+f'en/Index_{source_id}.html','csvSha256':hashlib.sha256(csvpath.read_bytes()).hexdigest(),'xmlSha256':hashlib.sha256(xml.read_bytes()).hexdigest(),'candidates':{'progressive':names[0],'conservative':names[1]},'units':{p:v for p,v in units.items() if p.isdigit()}}
+ candidates=[norm(t.findtext('ContestantName','')) for t in summary.findall('Table') if norm(t.findtext('RaceName',''))==name]
+ all_units={}
+ for row in rows[start+1:]:
+  pid,race,candidate,votes,*_=row
+  if norm(race)!=name:continue
+  candidate=norm(candidate)
+  if candidate not in candidates:raise ValueError('Unknown archive candidate')
+  raw=all_units.setdefault(pid,{})
+  if candidate in raw:raise ValueError('Duplicate archive candidate cell')
+  raw[candidate]=int(votes)
+ for table in summary.findall('Table'):
+  if norm(table.findtext('RaceName',''))!=name:continue
+  candidate=norm(table.findtext('ContestantName',''))
+  if source_id!=31:
+   if 'ABSENTEE' in all_units:raise ValueError('Unexpected preexisting absentee archive row')
+   # Filled below as a complete separate unit, never as a residual or geographic vote.
+ absentee={norm(t.findtext('ContestantName','')):int(t.findtext('AbsenteeVotes')) for t in summary.findall('Table') if norm(t.findtext('RaceName',''))==name}
+ if source_id!=31:all_units['ABSENTEE']=absentee
+ for candidate in candidates:
+  if any(candidate not in u for u in all_units.values()):raise ValueError('Missing archive candidate')
+  if sum(u[candidate] for u in all_units.values())!=official[candidate]:raise ValueError('Archive total mismatch')
+ archive={'candidates':candidates,'units':{pid:[u[c] for c in candidates] for pid,u in all_units.items()},'totals':[official[c] for c in candidates],'voteFor':slates['seats']}
+ return {'archive':archive,'boundaryMatch':True,'date':{'2026':'2026-04-07','2025':'2025-04-08','2024':'2024-04-02'}[year],'year':year,'source':base+f'en/Index_{source_id}.html','csvSha256':hashlib.sha256(csvpath.read_bytes()).hexdigest(),'xmlSha256':hashlib.sha256(xml.read_bytes()).hexdigest(),'candidates':{'progressive':names[0],'conservative':names[1]},'units':{p:v for p,v in units.items() if p.isdigit()}}
+
+
+def school_2023():
+ year='2023'; source='https://sccmo.org/Archive.aspx?ADID=4928'
+ path=download(source,CACHE/'school-2023.pdf');bbox=CACHE/'school-2023.html'
+ subprocess.run(['pdftotext','-bbox-layout',str(path),str(bbox)],check=True)
+ candidates=['DOUG ZIEGEMEIER','ANDREW FLETT','AMY EASTERLING','JANE PUSZKAR','MARK PONDER','RON HARMON','HARRY HARRIS','WRITE-IN']
+ units={};totals=None;pages=[]
+ for page_no,page in enumerate(ET.parse(bbox).findall('.//h:page',NS),1):
+  words=page.findall('.//h:word',NS)
+  title=' '.join(w.text for w in sorted(words,key=lambda w:(float(w.get('yMin')),float(w.get('xMin')))) if 85<float(w.get('yMin'))<131)
+  if 'FRANCIS HOWELL R-III SCHOOL BOARD MEMBER' not in title:continue
+  pages.append(page_no)
+  for idx,candidate in enumerate(candidates):
+   header=' '.join(w.text for w in sorted(words,key=lambda w:(float(w.get('yMin')),float(w.get('xMin')))) if 130<float(w.get('yMin'))<163 and 253+66*idx<=float(w.get('xMin'))<319+66*idx)
+   if re.sub(r'[^A-Z]','',header)!=re.sub(r'[^A-Z]','',candidate):raise ValueError(f'2023 header changed {header}')
+  for label in words:
+   if float(label.get('xMin'))>=50 or float(label.get('yMin'))<=160:continue
+   pid=label.text
+   if not (re.fullmatch(r'\d{3}',pid or '') or pid in ['Total','CENTRAL','ABSENTEE']):continue
+   row=[w for w in words if abs(float(w.get('yMin'))-float(label.get('yMin')))<1]
+   if pid=='CENTRAL':pid+=' '+' '.join(w.text for w in row if 50<float(w.get('xMin'))<150)
+   values=[]
+   for idx in range(len(candidates)):
+    cells=[w.text for w in row if 253+66*idx<=float(w.get('xMin'))<287+66*idx and re.fullmatch(r'\d+',w.text or '')]
+    if len(cells)!=1:raise ValueError(f'Ambiguous 2023 cell {pid} {idx}')
+    values.append(int(cells[0]))
+   if pid=='Total':totals=values
+   else:
+    if pid in units:raise ValueError('Duplicate 2023 school precinct')
+    units[pid]=values
+ if not units or totals!=[sum(v[i] for v in units.values()) for i in range(len(candidates))]:raise ValueError('2023 certified totals do not reconcile')
+ slates=json.loads((ROOT/'data/school-slates.json').read_text())['slates'][year]
+ groups=[slates['fh_forward']['candidates'],slates['fh_families']['candidates']]
+ return {'year':year,'date':'2023-04-04','source':source,'pages':pages,'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'boundaryMatch':False,'candidates':{'progressive':groups[0],'conservative':groups[1]},'units':{pid:[sum(v[candidates.index(c)] for c in group) for group in groups] for pid,v in units.items() if pid.isdigit()},'archive':{'candidates':candidates,'units':units,'totals':totals,'voteFor':3}}
 
 if __name__=='__main__':
- result={'schemaVersion':1,'general':[pdf_races(y) for y in ['2024','2022']],'school':[school(y,n) for y,n in [('2026',31),('2025',30),('2024',27)]]}
+ result={'schemaVersion':1,'general':[pdf_races(y) for y in ['2024','2022']],'school':[school(y,n) for y,n in [('2026',31),('2025',30),('2024',27)]]+[school_2023()]}
  out=ROOT/'public/data/historical-benchmarks.json';out.write_text(json.dumps(result,separators=(',',':'))+'\n')
  print(f'Wrote {out} ({out.stat().st_size:,} bytes)')
  for g in result['general']:print(g['year'],len(g['races']),'contested races; sums reconcile including separately excluded special units')
