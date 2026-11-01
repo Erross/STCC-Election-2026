@@ -1,0 +1,79 @@
+{
+  "source": "https://github.com/Erross/Election-Map/blob/main/election-app/public/slates.json",
+  "slates": {
+    "2026": {
+      "seats": 3,
+      "fh_families": {
+        "label": "FH Families",
+        "color": "red",
+        "candidates": [
+          "LAUREN GREENWOOD",
+          "DAVID JAWORSKI",
+          "JANE PUSZKAR"
+        ]
+      },
+      "fh_forward": {
+        "label": "FH Forward",
+        "color": "blue",
+        "candidates": [
+          "JASON ADAMS",
+          "SARA DILLARD",
+          "KEVIN MCGUIRE"
+        ]
+      },
+      "independent": {
+        "candidates": []
+      }
+    },
+    "2025": {
+      "seats": 2,
+      "fh_families": {
+        "label": "FH Families",
+        "color": "red",
+        "candidates": [
+          "RANDY COOK",
+          "ASHLEY STURM"
+        ]
+      },
+      "fh_forward": {
+        "label": "FH Forward",
+        "color": "blue",
+        "candidates": [
+          "AMY GRYDER",
+          "SARAH OELKE"
+        ]
+      },
+      "independent": {
+        "candidates": []
+      },
+      "winner": "fh_forward"
+    },
+    "2024": {
+      "seats": 2,
+      "fh_families": {
+        "label": "FH Families",
+        "color": "red",
+        "candidates": [
+          "ADRIANA KUHN",
+          "SAM YOUNG"
+        ]
+      },
+      "fh_forward": {
+        "label": "FH Forward",
+        "color": "blue",
+        "candidates": [
+          "STEVEN BLAIR",
+          "CAROLIE OWENS"
+        ]
+      },
+      "independent": {
+        "candidates": []
+      },
+      "winner": "fh_forward"
+    }
+  },
+  "notes": {
+    "classification": "FH Forward is the progressive comparison slate; FH Families is the conservative comparison slate. These are comparison conventions, not ballot party labels or endorsements of H/O.",
+    "formula": "sum(selected slate candidate votes) / sum(both slates candidate votes); excludes write-ins and independents; not unique voters."
+  }
+}

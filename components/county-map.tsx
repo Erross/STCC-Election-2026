@@ -3,15 +3,16 @@ import { useEffect, useRef, useState } from 'react';
 import type * as Leaflet from 'leaflet';
 import type { Contest } from '@/lib/election/types';
 import { mapColor, leader, shortName, unitLabel, formatNumber, share } from '@/lib/election/presentation';
+import { comparisonColor, percent, points, type Comparison, type MapMode } from '@/lib/election/benchmarks';
 import { assetUrl } from '@/lib/client-config';
 import { Maximize2 } from 'lucide-react';
 
 /** Generalizes the original Election-Map's Leaflet polygons, resize handling,
  * precinct hover/click, and labels to contest-specific membership. */
-export default function CountyMap({ contest, mode, labels, selectedUnit, onSelect }: { contest: Contest; mode: 'margin' | 'reporting'; labels: boolean; selectedUnit: string | null; onSelect: (id: string) => void }) {
+export default function CountyMap({ contest, mode, comparisons, comparisonText, labels, selectedUnit, onSelect }: { contest: Contest; mode: MapMode; comparisons: Record<string, Comparison>; comparisonText: { current: string; baseline: string } | null; labels: boolean; selectedUnit: string | null; onSelect: (id: string) => void }) {
   const container = useRef<HTMLDivElement>(null); const map = useRef<Leaflet.Map | null>(null);
   const api = useRef<typeof Leaflet | null>(null); const polygons = useRef<Leaflet.GeoJSON | null>(null); const markers = useRef<Leaflet.LayerGroup | null>(null);
-  const latest = useRef({ contest, mode, selectedUnit, onSelect }); latest.current = { contest, mode, selectedUnit, onSelect };
+  const latest = useRef({ contest, mode, comparisons, comparisonText, selectedUnit, onSelect }); latest.current = { contest, mode, comparisons, comparisonText, selectedUnit, onSelect };
   const [ready, setReady] = useState(false); const [error, setError] = useState<string | null>(null); const geometry = useRef<GeoJSON.FeatureCollection | null>(null);
   useEffect(() => {
     let disposed = false; const abort = new AbortController(); let observer: ResizeObserver | null = null;
@@ -27,7 +28,7 @@ export default function CountyMap({ contest, mode, labels, selectedUnit, onSelec
         function style(feature?: GeoJSON.Feature) {
           const { contest: c, mode: view, selectedUnit: selected } = latest.current;
           const pid = String(feature?.properties?.DIST_NUM); const unit = c.units.find(u => u.id === pid) ?? null;
-          return { color: selected === pid ? '#132d42' : unit ? '#7d929d' : '#bac5ca', weight: selected === pid ? 3 : .85, fillColor: mapColor(c, unit, view), fillOpacity: unit ? .89 : .32 };
+          return { color: selected === pid ? '#132d42' : unit ? '#7d929d' : '#bac5ca', weight: selected === pid ? 3 : .85, fillColor: view === 'baseline' || view === 'variance' ? comparisonColor(unit, latest.current.comparisons[pid], view) : mapColor(c, unit, view), fillOpacity: unit ? .89 : .32 };
         }
         const layer = L.geoJSON(geo, { style, onEachFeature(feature, polygon) {
           const pid = String(feature.properties?.DIST_NUM);
@@ -42,6 +43,8 @@ export default function CountyMap({ contest, mode, labels, selectedUnit, onSelec
               const row = document.createElement('div'); const name = document.createElement('span'); name.textContent = option.name;
               const value = document.createElement('b'); value.textContent = `${formatNumber(unit.votes[option.id])} · ${share(unit.votes[option.id], unit.totalVotes)}`; row.appendChild(name); row.appendChild(value); tip.appendChild(row);
             }
+            const comparison = latest.current.comparisons[pid]; const text = latest.current.comparisonText;
+            if (unit && text) { for (const [label, value] of [[text.baseline, percent(comparison?.baseline)], [`2026 ${text.current}`, percent(comparison?.current)], ['Variance', points(comparison?.delta)]]) { const row = document.createElement('div'); const name = document.createElement('span'); name.textContent = label; const valueEl = document.createElement('b'); valueEl.textContent = value; row.appendChild(name); row.appendChild(valueEl); tip.appendChild(row); } }
             polygon.bindTooltip(tip, { sticky: true, direction: 'top', className: 'results-tooltip', opacity: 1 }).openTooltip();
           }, mouseout() { (polygon as Leaflet.Path).setStyle(style(feature)); polygon.closeTooltip(); }, click: choose, add() {
             const el = (polygon as Leaflet.Path).getElement(); if (el) { el.setAttribute('tabindex', '0'); el.setAttribute('role', 'button'); el.setAttribute('aria-label', `Show precinct ${pid} results`); el.addEventListener('keydown', e => { if ((e as KeyboardEvent).key === 'Enter') choose(); }); }
@@ -59,7 +62,7 @@ export default function CountyMap({ contest, mode, labels, selectedUnit, onSelec
   useEffect(() => {
     if (!ready || !polygons.current || !api.current || !markers.current || !geometry.current) return;
     const L = api.current; const units = new Map(contest.units.map(u => [u.id, u]));
-    polygons.current.setStyle(feature => { const pid = String(feature?.properties?.DIST_NUM); const u = units.get(pid) ?? null; return { color: selectedUnit === pid ? '#132d42' : u ? '#7d929d' : '#bac5ca', weight: selectedUnit === pid ? 3 : .85, fillColor: mapColor(contest, u, mode), fillOpacity: u ? .89 : .32 }; });
+    polygons.current.setStyle(feature => { const pid = String(feature?.properties?.DIST_NUM); const u = units.get(pid) ?? null; return { color: selectedUnit === pid ? '#132d42' : u ? '#7d929d' : '#bac5ca', weight: selectedUnit === pid ? 3 : .85, fillColor: mode === 'baseline' || mode === 'variance' ? comparisonColor(u, comparisons[pid], mode) : mapColor(contest, u, mode), fillOpacity: u ? .89 : .32 }; });
     markers.current.clearLayers(); if (!labels) return;
     for (const feature of geometry.current.features) {
       const pid = String(feature.properties?.DIST_NUM); const unit = units.get(pid); if (!unit) continue;
@@ -68,9 +71,10 @@ export default function CountyMap({ contest, mode, labels, selectedUnit, onSelec
       const center: [number, number] = [ring.reduce((n, p) => n + p[1], 0) / ring.length, ring.reduce((n, p) => n + p[0], 0) / ring.length];
       const label = document.createElement('div'); label.className = 'map-label'; const id = document.createElement('b'); id.textContent = pid; label.appendChild(id);
       const win = leader(contest, unit); if (win && !win.tie && mode === 'margin') { const value = document.createElement('span'); value.textContent = `${shortName(win.choice)} ${(win.choice.votes / unit.totalVotes * 100).toFixed(0)}%`; label.appendChild(value); }
+      if (mode === 'baseline' || mode === 'variance') { const value = document.createElement('span'); value.textContent = mode === 'baseline' ? percent(comparisons[pid]?.baseline) : points(comparisons[pid]?.delta); label.appendChild(value); }
       L.marker(center, { icon: L.divIcon({ html: label, className: 'precinct-label-icon', iconSize: [70, 28], iconAnchor: [35, 14] }), interactive: false }).addTo(markers.current);
     }
-  }, [contest, mode, labels, selectedUnit, ready]);
+  }, [contest, mode, comparisons, labels, selectedUnit, ready]);
   function fit() { if (!api.current || !polygons.current || !map.current) return; const ids = new Set(contest.units.map(u => u.id)); const geo = geometry.current!; const filtered: GeoJSON.FeatureCollection = { ...geo, features: geo.features.filter(f => ids.has(String(f.properties?.DIST_NUM))) }; const layer = api.current.geoJSON(filtered); map.current.fitBounds(layer.getBounds(), { padding: [35, 35], animate: false }); }
   return <div className="county-map-shell"><div ref={container} className="county-map" aria-label={`Interactive precinct map for ${contest.title}`} />{!ready && <div className="map-loading">{error ?? 'Loading county precincts…'}</div>}<button className="fit-map" onClick={fit}><Maximize2 size={14} /> Fit contest</button><div className="map-corner"><span>↑</span>N</div></div>;
 }

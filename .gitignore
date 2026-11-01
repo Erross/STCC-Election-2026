@@ -7,3 +7,5 @@ dist-worker/
 .dev.vars*
 wrangler.generated.json
 *.tsbuildinfo
+
+work/

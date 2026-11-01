@@ -38,3 +38,7 @@ Starting November 3 at 7 p.m. CST, visible pages check the backend every 30 seco
 The county's public CSV/XML files need no API key and must reconcile before any new snapshot is stored. Failed or inconsistent fetches retain the last valid report. Congressional and statewide results represent St. Charles County's portion only.
 
 See [operations](docs/OPERATIONS.md), [validation](docs/VALIDATION.md) and [attribution](docs/ATTRIBUTION.md).
+
+## Historical precinct benchmarks
+
+H/O include 2024–2026 school-board slate comparisons. Other contests offer verified 2024/2022 D/R race averages and same-office results where available. Statewide measures use sourced party positions; local questions without verified endorsements are labeled descriptive comparisons. Maps, tables and comparison CSVs show share variance in percentage points, with no swing inferred before votes arrive. See [sources and methodology](docs/HISTORICAL-COMPARISONS.md).
