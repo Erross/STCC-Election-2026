@@ -29,5 +29,6 @@ export function makeArchiveSnapshot(id: string, history: Benchmarks, template: S
     });
   }
   const units = new Set(contests.flatMap(c => c.units.map(u => u.id)));
-  return { ...template, electionId: entry.date, sourceElectionId: id, title: entry.label, date: entry.date, generatedAt: `${entry.date}T12:00:00Z`, fetchedAt: `${entry.date}T12:00:00Z`, dataHash: id, phase: 'complete', totalBallots: null, registeredVoters: null, turnout: null, geographicUnits: [...units].filter(u => /^\d+$/.test(u)).length, reportingUnits: units.size, contests };
+  // Publication/check timestamps are unknown in this catalog; do not infer them from election day.
+  return { ...template, electionId: entry.date, sourceElectionId: id, title: entry.label, date: entry.date, generatedAt: '', fetchedAt: '', dataHash: id, phase: 'complete', totalBallots: null, registeredVoters: null, turnout: null, geographicUnits: [...units].filter(u => /^\d+$/.test(u)).length, reportingUnits: units.size, contests };
 }

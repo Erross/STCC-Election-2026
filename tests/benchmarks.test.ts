@@ -83,6 +83,7 @@ test('archived school races reconcile every candidate and preserve special repor
   for (const school of history.school) {
     const snapshot = makeArchiveSnapshot(`school-${school.year}`, history, seed)!;
     assert.equal(snapshot.electionId, school.date); assert.equal(snapshot.contests.length, 1);
+    assert.equal(snapshot.generatedAt, ''); assert.equal(snapshot.fetchedAt, '');
     const board = snapshot.contests[0];
     assert.equal(board.totalVotes, board.choices.reduce((n, c) => n + c.votes, 0));
     assert.ok(board.units.some(u => u.id === 'ABSENTEE' && !u.geographic));
