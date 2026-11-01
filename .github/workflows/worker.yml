@@ -29,3 +29,5 @@ jobs:
         run: npm run worker:deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      - name: Verify deployed API and database
+        run: node scripts/check-api.mjs

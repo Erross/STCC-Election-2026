@@ -1,0 +1,22 @@
+import { readFileSync } from 'node:fs';
+import assert from 'node:assert/strict';
+
+const { resultsApiUrl } = JSON.parse(readFileSync(new URL('../deployment.json', import.meta.url), 'utf8'));
+const origin = 'https://erross.github.io';
+const healthResponse = await fetch(`${resultsApiUrl}/api/health`, { signal: AbortSignal.timeout(20_000) });
+assert.equal(healthResponse.status, 200, 'Deployed health endpoint must respond');
+const health = await healthResponse.json();
+assert.equal(health.election, '2026-11-03');
+assert.equal(health.error, null, 'Deployed database must be available');
+const response = await fetch(`${resultsApiUrl}/api/results`, { headers: { Origin: origin }, signal: AbortSignal.timeout(20_000) });
+assert.equal(response.status, 200);
+assert.equal(response.headers.get('Access-Control-Allow-Origin'), origin);
+const data = await response.json();
+assert.equal(data.snapshot.electionId, '2026-11-03');
+assert.equal(data.snapshot.contests.length, 50);
+assert.equal(data.snapshot.geographicUnits, 115);
+assert.equal(data.health.error, null);
+const preflight = await fetch(`${resultsApiUrl}/api/results`, { method: 'OPTIONS', headers: { Origin: origin, 'Access-Control-Request-Method': 'GET', 'Access-Control-Request-Headers': 'if-none-match' }, signal: AbortSignal.timeout(20_000) });
+assert.equal(preflight.status, 204);
+assert.match(preflight.headers.get('Access-Control-Allow-Headers') ?? '', /If-None-Match/i);
+console.log(JSON.stringify({ api: resultsApiUrl, phase: data.snapshot.phase, contests: data.snapshot.contests.length, collection: data.health.collection.state, storage: 'available', cors: 'verified' }));

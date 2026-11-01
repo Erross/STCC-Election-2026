@@ -6,7 +6,7 @@ Election key `2026-11-03`; county source ID `33`; display timezone `America/Chic
 
 Static React/Vite on GitHub Pages; a separate Cloudflare Worker and new D1 database in the owner's account. This tree has no Sites runtime dependency.
 
-The public API origin comes from `VITE_RESULTS_API_URL`. GitHub's configure-pages action supplies the repository base path. Worker CORS permits `https://erross.github.io` and local development origins, including ETag conditional requests. CORS is not authentication: all API data is public election information, and the refresh endpoint accepts only fixed-source collection with a shared database lease.
+The public API origin comes from the verified URL in `deployment.json`, with an optional `VITE_RESULTS_API_URL` override. GitHub's configure-pages action supplies the repository base path. Worker CORS permits `https://erross.github.io` and local development origins, including ETag conditional requests. CORS is not authentication: all API data is public election information, and the refresh endpoint accepts only fixed-source collection with a shared database lease.
 
 ## Lifecycle
 
