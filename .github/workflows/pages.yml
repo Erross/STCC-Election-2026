@@ -10,7 +10,6 @@ concurrency:
   cancel-in-progress: true
 jobs:
   build:
-    if: vars.VITE_RESULTS_API_URL != ''
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -21,14 +20,6 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run typecheck
-      - name: Require live backend URL
-        env:
-          API_URL: ${{ vars.VITE_RESULTS_API_URL }}
-        run: |
-          if [ -z "$API_URL" ]; then
-            echo 'Set repository variable VITE_RESULTS_API_URL to the new STCC Worker URL.'
-            exit 1
-          fi
       - name: Configure Pages
         id: pages
         uses: actions/configure-pages@v5

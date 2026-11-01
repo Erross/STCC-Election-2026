@@ -16,9 +16,9 @@ npm run build
 npm run worker:build
 ```
 
-Copy `.env.example` to `.env.local` and set `VITE_RESULTS_API_URL` to the new STCC Worker's URL. `npm run dev` starts the frontend. For a local API, run `npx wrangler d1 migrations apply stcc-election-2026 --local --config wrangler.jsonc`, then `npm run worker:dev`. Use `http://127.0.0.1:8787` as the frontend API URL.
+The deployed API URL is configured in `deployment.json`. For a different backend, copy `.env.example` to `.env.local` and set `VITE_RESULTS_API_URL` to override it. `npm run dev` starts the frontend. For a local API, run `npx wrangler d1 migrations apply stcc-election-2026 --local --config wrangler.jsonc`, then `npm run worker:dev`. Use `http://127.0.0.1:8787` as the frontend API URL.
 
-Without an API URL, the app shows the saved county zero report and an explicit backend-unconnected warning. It does not present the seed as live results.
+If neither an override nor a deployed API URL is configured, the app shows the saved county zero report and an explicit backend-unconnected warning. It does not present the seed as live results.
 
 ## Deployment
 
@@ -26,7 +26,7 @@ Without an API URL, the app shows the saved county zero report and an explicit b
 2. The new STCC D1 database is configured in `wrangler.jsonc` using the owner-provided account and database IDs. Do not reuse the original app's resources.
 3. Set repository secret `CLOUDFLARE_API_TOKEN`. Use the Edit Cloudflare Workers token template scoped to the configured account and add D1 Edit for database migrations. The account/database IDs are already in source, so no repository variables are needed for them. Keep credentials out of source and chat. Alternatively use Wrangler login for local deployment without a CI token.
 4. Merging to main automatically runs **Deploy new STCC backend**; it can also be run manually on main. It applies migrations and deploys `stcc-election-2026-api` with an hourly trigger. Verify the returned Worker's `/api/health` and `/api/results`.
-5. Set repository variable `VITE_RESULTS_API_URL` to the new Worker URL. Run **Deploy tracker to GitHub Pages**. The workflow uses Pages' actual base path for assets and map geometry.
+5. The verified new Worker URL is configured in `deployment.json`; `VITE_RESULTS_API_URL` is an optional override. The **Deploy tracker to GitHub Pages** workflow runs on merges to main. The workflow uses Pages' actual base path for assets and map geometry.
 6. Verify the Pages app can reach its API and load the map. Only then disable the temporary ChatGPT Site's fallback automation. Do not change the original Election-Map.
 
 For local Worker deployment, authenticate with Wrangler and set the non-secret account/database IDs in environment variables, then run `npm run worker:migrate` and `npm run worker:deploy`. Deployment refuses the placeholder database ID. Generated configuration and local secrets are ignored by Git.
