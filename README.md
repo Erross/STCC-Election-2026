@@ -25,7 +25,7 @@ Without an API URL, the app shows the saved county zero report and an explicit b
 1. Create a separate repository, proposed name `STCC-Election-2026`. Develop on `build/github-pages`, then merge after validation. Enable Pages using **GitHub Actions** as the publishing source.
 2. The new STCC D1 database is configured in `wrangler.jsonc` using the owner-provided account and database IDs. Do not reuse the original app's resources.
 3. Set repository secret `CLOUDFLARE_API_TOKEN`. Use the Edit Cloudflare Workers token template scoped to the configured account and add D1 Edit for database migrations. The account/database IDs are already in source, so no repository variables are needed for them. Keep credentials out of source and chat. Alternatively use Wrangler login for local deployment without a CI token.
-4. Run **Deploy new STCC backend** on main. It applies migrations and deploys `stcc-election-2026-api` with an hourly trigger. Verify the returned Worker's `/api/health` and `/api/results`.
+4. Merging to main automatically runs **Deploy new STCC backend**; it can also be run manually on main. It applies migrations and deploys `stcc-election-2026-api` with an hourly trigger. Verify the returned Worker's `/api/health` and `/api/results`.
 5. Set repository variable `VITE_RESULTS_API_URL` to the new Worker URL. Run **Deploy tracker to GitHub Pages**. The workflow uses Pages' actual base path for assets and map geometry.
 6. Verify the Pages app can reach its API and load the map. Only then disable the temporary ChatGPT Site's fallback automation. Do not change the original Election-Map.
 
