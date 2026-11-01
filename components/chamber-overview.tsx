@@ -11,7 +11,7 @@ function CandidateRows({ contest, unit }: { contest: Contest; unit?: ResultUnit 
 }
 export default function ChamberOverview({ group, races, currentDate, benchmarks, archived, comparisonOpen, setComparisonOpen, compareRef, mapRef, onOpen, onExport }: { group: ChamberId; races: Contest[]; currentDate: string; benchmarks: Benchmarks | null; archived: boolean; comparisonOpen: boolean; setComparisonOpen: (open: boolean) => void; compareRef: RefObject<HTMLDivElement | null>; mapRef: RefObject<HTMLElement | null>; onOpen: (id: string) => void; onExport: () => void }) {
   const title = CHAMBERS.find(c => c.id === group)!.label; const units = useMemo(() => chamberUnits(races), [races]); const mapped = units.filter(u => u.geographic); const split = mapped.filter(u => u.split);
-  const [mode, setMode] = useState<ChamberMapMode>('district'); const [selected, setSelected] = useState('');
+  const [mode, setMode] = useState<ChamberMapMode>('margin'); const [selected, setSelected] = useState('');
   const [comparisonYear, setComparisonYear] = useState(''); const [basis, setBasis] = useState<'average' | 'office'>('average'); const [side, setSide] = useState<Alignment>('first');
   const detailRef = useRef<HTMLDivElement>(null); const currentYear = currentDate.slice(0, 4);
   const years = benchmarks?.general.filter(g => !(currentDate.slice(5, 7) === '11' && g.year === currentYear)) ?? [];
