@@ -18,7 +18,7 @@ The November 2026 feed and saved revisions remain independent of the historical 
 4. Variance is `(current share - historical share) * 100`, in percentage points of share, not margin. Positive means the displayed current option exceeds the selected baseline.
 5. Before current votes are published, current share and variance are null. No zero-report swing, inferred voter choice or prediction is displayed. An uncontested current D/R race offers its historical baseline without a current partisan delta.
 6. The overview uses only geographic precincts with both historical and current comparison votes. It weights each precinct's historical share by that precinct's current D+R or Yes+No votes. This compares the same reporting precincts on both sides and excludes unmatched/zero-vote precincts. Coverage is always shown and results are provisional while reporting.
-7. ABSENTEE and CENTRAL units are excluded from every comparison. They remain separate and included in the ordinary live totals. No residual vote is assigned to a polygon. Historical and current split precincts may contain different electorate subsets; even a matched polygon is a descriptive benchmark.
+7. ABSENTEE and CENTRAL units are excluded from **mapped precinct comparisons** and never assigned to polygons. A separate expandable comparison matches like-named accounting units where historical totals exist, showing current share, historical share, change, and comparison-vote counts. General-election history uses certified PDF D/R `allUnits`; school history uses audited per-candidate `archive.units` with the selected slate definition. Reporting-unit definitions and voters may differ across elections, so this separate descriptive result is not pooled with the geographic estimate. Every special unit is included as a clearly named row in comparison CSV exports. Historical and current split precincts may contain different electorate subsets; even a matched polygon is a descriptive benchmark.
 
 ## Sources and verification
 
@@ -55,7 +55,7 @@ The school archives include all candidates and write-ins, plus each separately p
 
 2023 slate definitions are checked against [published contemporary endorsements](https://francishowellfamilies.org/we-must-be-doing-something-right/) and the [county Republican committee's endorsements](https://stcharlesgop.com/sccrcc-endorses-candidates-for-2023-board-of-education-election/): Forward's comparison slate is Doug Ziegemeier, Amy Easterling and Harry Harris; Families' slate is Jane Puszkar, Mark Ponder and Ron Harmon. Andrew Flett is excluded from slate share. A legacy cached race file conflicted with the original `slates.json` membership and is not used. 2023 boundary equivalence is unverified and the comparison carries an explicit caveat.
 
-The selected election's raw candidate totals include its non-map units. Comparative shares, maps and change summaries still exclude those units and use only matched geographic precincts. Consequently, a comparison-panel share can differ from the raw countywide candidate share.
+The selected election's raw candidate totals include its non-map units. Mapped-precinct comparisons still exclude those units and use only matched geographic precincts. Separately, an expandable non-geographic comparison reports matched ABSENTEE/CENTRAL accounting buckets where archived data exists. Consequently, a mapped comparison-panel share can differ from the raw countywide candidate share.
 
 ## Mobile usability
 
