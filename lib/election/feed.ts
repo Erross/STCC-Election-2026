@@ -1,4 +1,4 @@
-import { buildSnapshot, parseUnitStatuses, SOURCE_BASE, SOURCE_PAGE } from './adapter.ts';
+import { buildSnapshot, SOURCE_BASE } from './adapter.ts';
 import type { FeedResponse, Snapshot } from './types.ts';
 import initialSnapshot from './seed.json' with { type: 'json' };
 import { collectionPolicy, refreshIsDue, REFRESH_MS } from './policy.ts';
@@ -33,14 +33,12 @@ async function refreshResults(): Promise<void> {
   try {
     const [xml, csv] = await Promise.all([upstream(`${SOURCE_BASE}summary_33.xml`, 2_000_000), upstream(`${SOURCE_BASE}Precincts_33.csv`, 3_000_000)]);
     const previousRow = await readState(db); const previous = JSON.parse(previousRow.snapshot) as Snapshot;
-    // Preserve known statuses if the optional human-facing page is unavailable.
-    let statuses = Object.fromEntries(previous.contests.flatMap(c => c.units.map(u => [u.id, u.status])));
-    let snapshot = await buildSnapshot(xml, csv, { expectedContests: 50, statuses });
-    if (snapshot.dataHash !== previous.dataHash) {
-      try { const current = parseUnitStatuses(await upstream(SOURCE_PAGE, 15_000_000)); if (Object.keys(current).length) statuses = current; }
-      catch { /* Summary reporting counts and vote totals remain usable without map statuses. */ }
-      snapshot = await buildSnapshot(xml, csv, { expectedContests: 50, statuses });
-    }
+    // On the hot path, parse CSV/XML only once. The optional HTML report can
+    // exceed 15 MB and previously caused a second full rebuild on new totals.
+    // Reporting counts and validated vote totals come from the authoritative
+    // CSV/XML files; prior fine-grained statuses remain available as hints.
+    const statuses = Object.fromEntries(previous.contests.flatMap(c => c.units.map(u => [u.id, u.status])));
+    const snapshot = await buildSnapshot(xml, csv, { expectedContests: 50, statuses });
     const savedAt = Date.now(); const payload = JSON.stringify(snapshot);
     await db.batch([
       db.prepare('INSERT INTO election_snapshots (hash, election_id, generated_at, saved_at, payload) VALUES (?, ?, ?, ?, ?) ON CONFLICT(hash) DO NOTHING').bind(snapshot.dataHash, ELECTION_ID, snapshot.generatedAt, savedAt, payload),
