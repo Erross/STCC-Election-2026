@@ -7,6 +7,32 @@ import { assetUrl } from '@/lib/client-config';
 import { calculateSwingPoints, swingDirection, swingEligibleRaces, SWING_ALL, type SwingPoint } from '@/lib/election/swing';
 
 const display = (v: number | null) => v == null ? '—' : (v > 0 ? '+' : '') + v.toFixed(1) + ' pp';
+
+/** A fixed, accessible SVG design, not a font glyph. Larger swings get larger arrows.
+ * SVG markup contains only our own static path geometry and bounded numbers.
+ */
+export function swingMarkerSvg(direction: 'democratic' | 'republican' | 'neutral', magnitude = 0): string {
+  const size = Math.round(26 + Math.min(18, Math.max(0, magnitude)) * 0.9);
+  const color = direction === 'democratic' ? '#2269be' : direction === 'republican' ? '#c33c48' : '#80929b';
+  if (direction === 'neutral') {
+    return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" width="56" height="56" aria-hidden="true">'
+      + '<circle cx="28" cy="28" r="10" fill="white" stroke="#d0dce1" stroke-width="2"/>'
+      + '<circle cx="28" cy="28" r="4.5" fill="#80929b"/></svg>';
+  }
+  // The same 45-degree arrow geometry is reflected to point northwest for D.
+  const reflection = direction === 'democratic' ? ' transform="translate(56 0) scale(-1 1)"' : '';
+  // Scale the medallion around its center within a fixed 56 px Leaflet marker.
+  const scale = (size / 52).toFixed(3);
+  return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" width="56" height="56" aria-hidden="true">'
+    + '<g transform="translate(28 28) scale(' + scale + ') translate(-28 -28)">'
+    + '<circle cx="28" cy="28" r="25" fill="white" fill-opacity=".94" stroke="#bdcbd1" stroke-width="1.4"/>'
+    + '<g' + reflection + '>'
+    + '<path d="M14 42 L40 16 M22 16 H40 V34" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>'
+    + '<path d="M14 42 L40 16 M22 16 H40 V34" fill="none" stroke="' + color
+    + '" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>'
+    + '</g></g></svg>';
+}
+
 function ArrowMap({ points }: { points: SwingPoint[] }) {
   const element = useRef<HTMLDivElement>(null);
   const map = useRef<Leaflet.Map | null>(null);
@@ -62,12 +88,13 @@ function ArrowMap({ points }: { points: SwingPoint[] }) {
       if (!point || point.delta == null) return;
       const direction = swingDirection(point.delta);
       const magnitude = Math.abs(point.delta);
-      const el = document.createElement('span');
-      el.className = 'swing-arrow swing-arrow-' + direction;
-      el.textContent = direction === 'democratic' ? '⬅' : direction === 'republican' ? '➡' : '•';
-      el.style.fontSize = Math.min(35, 15 + magnitude * 1.1) + 'px';
       const marker = L.marker((layer as Leaflet.Polygon).getBounds().getCenter(), {
-        icon: L.divIcon({ html: el, className: 'swing-arrow-icon', iconSize: [48, 40], iconAnchor: [24, 20] }),
+        icon: L.divIcon({
+          html: swingMarkerSvg(direction, magnitude),
+          className: 'swing-arrow-icon swing-arrow-icon-' + direction,
+          iconSize: [56, 56],
+          iconAnchor: [28, 28],
+        }),
         keyboard: true,
       });
       const label = 'Precinct ' + id + ': ' + display(point.delta) + ' toward ' + (direction === 'democratic' ? 'Democrats' : direction === 'republican' ? 'Republicans' : 'neither side') + '; ' + point.races + ' comparable ' + (point.races === 1 ? 'race' : 'races');
@@ -93,12 +120,12 @@ export default function SwingMap({ contests, benchmarks, date }: { contests: Con
   const chosenRace = eligible.find(c => c.id === selected);
   const sameOffice = chosenRace && benchmarks?.general.find(g => g.year === '2024')?.races.some(r => r.name.replace(/[^A-Z0-9]/g, '') === chosenRace.sourceName.replace(/[^A-Z0-9]/g, ''));
   return <section className="swing-view" aria-label="Precinct swing map">
-    <div className="swing-heading"><div><span className="eyebrow">VOTE SHIFT · 2024 TO {date.slice(0, 4)}</span><h2>Which way did each precinct move?</h2><p>Arrows show percentage-point change in Democratic two-party share. Blue left = more Democratic; red right = more Republican.</p></div></div>
+    <div className="swing-heading"><div><span className="eyebrow">VOTE SHIFT · 2024 TO {date.slice(0, 4)}</span><h2>Which way did each precinct move?</h2><p>Arrows show percentage-point change in Democratic two-party share. Blue northwest = more Democratic; red northeast = more Republican.</p></div></div>
     <div className="swing-controls"><label htmlFor="swing-race">Show swing for</label><select id="swing-race" value={selected} onChange={e => setRace(e.target.value)}><option value={SWING_ALL}>All contested D/R races · equal-weight average</option>{eligible.map(c => <option key={c.id} value={c.id}>{c.title} · {c.jurisdiction}</option>)}</select></div>
     {!benchmarks ? <p role="status">Historical comparison data is not yet available.</p> : <>
       <div className="swing-stats"><div><span>Precincts with comparable votes</span><strong>{points.length}</strong></div><div><span>Shifted toward Democrats</span><strong>{positive}</strong></div><div><span>Shifted toward Republicans</span><strong>{negative}</strong></div></div>
       <ArrowMap points={points} />
-      <div className="swing-legend"><span className="swing-legend-dem">⬅ Toward Democrats</span><span className="swing-legend-rep">Toward Republicans ➡</span><span>Arrow size = magnitude, capped at 18 pp</span><span>Unreported / unmatched precincts have no arrow</span></div>
+      <div className="swing-legend"><span className="swing-legend-dem"><span aria-hidden="true" dangerouslySetInnerHTML={{ __html: swingMarkerSvg('democratic', 12) }} /> Toward Democrats</span><span className="swing-legend-rep"><span aria-hidden="true" dangerouslySetInnerHTML={{ __html: swingMarkerSvg('republican', 12) }} /> Toward Republicans</span><span>Arrow size = magnitude, capped at 18 pp</span><span>Unreported / unmatched precincts have no arrow</span></div>
       <p className="swing-method"><strong>Method:</strong> {selected === SWING_ALL ? 'Each precinct receives the arithmetic mean of available race-level swings, giving each contested D/R race one equal vote in the average. Only published precinct D/R votes count; a district contest is not extrapolated outside its electorate.' : sameOffice ? 'This race is compared with the same office in the 2024 audited results where a matching precinct exists.' : 'This race is compared with the 2024 audited equal-weight D/R race average for the same precinct (not a same-office result).'} 2024 values are historical comparisons, not a prediction. Absentee and central units are excluded because they have no precinct geography. The set of races contributing to the all-races average varies by precinct, and arrows are provisional while reporting continues.</p>
       <div className="swing-table"><h3>Precinct shifts</h3><div className="swing-table-scroll"><table><thead><tr><th>Precinct</th><th>Direction</th><th>Change</th><th>Races</th></tr></thead><tbody>{points.map(p => <tr key={p.id}><td>{p.id}</td><td>{swingDirection(p.delta) === 'democratic' ? 'Toward D' : swingDirection(p.delta) === 'republican' ? 'Toward R' : 'No change'}</td><td>{display(p.delta)}</td><td>{p.races}</td></tr>)}</tbody></table></div></div>
     </>}

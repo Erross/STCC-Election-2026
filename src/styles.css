@@ -45,14 +45,15 @@
 .swing-stats strong { display: block; font-size: 1.35rem; margin-top: .25rem; color: #183950; }
 .swing-map-wrap { position: relative; width: 100%; }
 .swing-map-canvas { height: clamp(370px, 53vw, 600px); width: 100%; border: 1px solid #d1dde2; border-radius: 7px; background: #e2ebee; z-index: 0; }
-.swing-arrow-icon { border: 0; background: none; }
-.swing-arrow { display: flex; justify-content: center; align-items: center; width: 48px; height: 40px; font-weight: 900; line-height: 1; -webkit-text-stroke: 1px white; text-shadow: 0 1px 3px rgba(20,40,50,.3); }
-.swing-arrow-democratic { color: #286fbd; }
-.swing-arrow-republican { color: #c44650; }
-.swing-arrow-neutral { color: #82939c; }
+.swing-arrow-icon { border: 0 !important; background: transparent !important; }
+.swing-arrow-icon svg { display: block; overflow: visible; filter: drop-shadow(0 2px 2px rgba(19, 48, 67, .24)); }
+.swing-arrow-icon-democratic { z-index: 1; }
+.swing-arrow-icon-republican { z-index: 1; }
 .swing-legend { display: flex; flex-wrap: wrap; gap: .6rem 1.4rem; font-size: .76rem; color: #536b79; }
-.swing-legend-dem { color: #286fbd; font-weight: 750; }
-.swing-legend-rep { color: #c44650; font-weight: 750; }
+.swing-legend-dem { color: #2269be; font-weight: 750; }
+.swing-legend-rep { color: #c33c48; font-weight: 750; }
+.swing-legend-dem, .swing-legend-rep { display: inline-flex; gap: 4px; align-items: center; }
+.swing-legend-dem svg, .swing-legend-rep svg { width: 34px; height: 34px; display: block; }
 .swing-table { border: 1px solid #d4dfe3; border-radius: 6px; background: white; padding: .7rem 1rem; }
 .swing-table h3 { margin: .2rem 0 .8rem; font-size: 1rem; }
 .swing-table-scroll { max-height: 300px; overflow: auto; }
