@@ -21,14 +21,16 @@ export function swingMarkerSvg(direction: 'democratic' | 'republican' | 'neutral
   }
   // The same 45-degree arrow geometry is reflected to point northwest for D.
   const reflection = direction === 'democratic' ? ' transform="translate(56 0) scale(-1 1)"' : '';
-  return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" width="' + size
-    + '" height="' + size + '" aria-hidden="true">'
+  // Scale the medallion around its center within a fixed 56 px Leaflet marker.
+  const scale = (size / 52).toFixed(3);
+  return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" width="56" height="56" aria-hidden="true">'
+    + '<g transform="translate(28 28) scale(' + scale + ') translate(-28 -28)">'
     + '<circle cx="28" cy="28" r="25" fill="white" fill-opacity=".94" stroke="#bdcbd1" stroke-width="1.4"/>'
     + '<g' + reflection + '>'
     + '<path d="M14 42 L40 16 M22 16 H40 V34" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>'
     + '<path d="M14 42 L40 16 M22 16 H40 V34" fill="none" stroke="' + color
     + '" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>'
-    + '</g></svg>';
+    + '</g></g></svg>';
 }
 
 function ArrowMap({ points }: { points: SwingPoint[] }) {
