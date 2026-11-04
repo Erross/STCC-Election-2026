@@ -62,6 +62,10 @@ test('Pages cross-origin conditional reads and preflight work; unlisted origins 
 test('shared database rate limit survives separate requests and hourly invocations', async () => {
   const db = setup(); let now = afterClose; Date.now = () => now; const calls = mockSources();
   try {
+    const initial = await worker.fetch(request('/api/results'), db.env);
+    assert.equal((await initial.json() as any).health.state, 'saved');
+    assert.equal(calls.length, 0, 'GET /api/results must not trigger ingestion');
+    await worker.scheduled({} as ScheduledController, db.env);
     const response = await worker.fetch(request('/api/results'), db.env);
     assert.equal((await response.json() as any).health.state, 'healthy');
     const count = calls.length; assert.ok(count >= 2);
@@ -94,6 +98,8 @@ test('completed snapshot is durable and every automatic collection path stops', 
   const completeXml = xml.replace(/<Table>[\s\S]*?<\/Table>/g, block => block.replace(/<PrecReported>\d+<\/PrecReported>/, `<PrecReported>${block.match(/<NumberOfPrec>(\d+)<\/NumberOfPrec>/)![1]}</PrecReported>`));
   const calls = mockSources(completeXml);
   try {
+    // The scheduled collector, not a public GET, ingests and caches final results.
+    await worker.scheduled({} as ScheduledController, db.env);
     const completed = await (await worker.fetch(request('/api/results'), db.env)).json() as any;
     assert.equal(completed.snapshot.phase, 'complete');
     const count = calls.length;
