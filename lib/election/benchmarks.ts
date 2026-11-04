@@ -142,6 +142,66 @@ export function summarizeComparisons(rows: Record<string, Comparison>) {
   const current = votes ? matched.reduce((n, r) => n + r.current! * r.votes, 0) / votes : null;
   return { eligible: eligible.length, matched: matched.length, votes, baseline, current, delta: baseline != null && current != null ? (current - baseline) * 100 : null };
 }
+/**
+ * All-reporting-unit comparison, strictly restricted to the same accounting
+ * units in the selected election and baseline. It is a CURRENT-VOTE-WEIGHTED
+ * benchmark, not a reconstruction of a historical countywide vote share.
+ *
+ * Rules:
+ * - A unit contributes only when its current comparable denominator > 0 and
+ *   the selected historical baseline contains that exact unit ID.
+ * - Count each unit once; geographic and special IDs are disjoint.
+ * - Never reassign ABSENTEE/CENTRAL totals to polygons or impute missing votes.
+ * - Current and historical shares use the same selected party/slate/Yes-No
+ *   definitions already used by per-unit comparisons.
+ * - The complete election is not asserted unless all reporting units report,
+ *   every current comparable vote is matched, and the historical categories
+ *   are comparable. This statistic is descriptive even when all report.
+ */
+export function summarizeOverallElectionComparison(
+  contest: Contest,
+  geographic: Record<string, Comparison>,
+  nonGeographic: Record<string, Comparison>,
+) {
+  const unitIds = new Set<string>();
+  let eligible = 0, matched = 0, votes = 0, baselineWeighted = 0, currentWeighted = 0;
+  let allCurrentVotes = 0, geographicVotes = 0, specialVotes = 0;
+  let matchedGeographic = 0, matchedSpecial = 0, unmatchedVotes = 0;
+  const unmatched: string[] = [];
+  for (const unit of contest.units) {
+    if (unitIds.has(unit.id)) throw new Error('Duplicate reporting unit in overall comparison');
+    unitIds.add(unit.id);
+    const row = (unit.geographic ? geographic : nonGeographic)[unit.id];
+    if (!row) throw new Error('Missing comparison row for reporting unit ' + unit.id);
+    if (row.baseline != null) eligible++;
+    allCurrentVotes += row.votes;
+    if (row.votes <= 0) continue;
+    if (row.baseline == null || row.current == null) {
+      unmatchedVotes += row.votes;
+      unmatched.push(unit.id);
+      continue;
+    }
+    matched++;
+    votes += row.votes;
+    baselineWeighted += row.baseline * row.votes;
+    currentWeighted += row.current * row.votes;
+    if (unit.geographic) { geographicVotes += row.votes; matchedGeographic++; }
+    else { specialVotes += row.votes; matchedSpecial++; }
+  }
+  const baseline = votes > 0 ? baselineWeighted / votes : null;
+  const current = votes > 0 ? currentWeighted / votes : null;
+  return {
+    eligible, matched, totalUnits: contest.units.length,
+    votes, allCurrentVotes, unmatchedVotes, unmatched,
+    coverage: allCurrentVotes > 0 ? votes / allCurrentVotes : null,
+    geographicVotes, specialVotes, matchedGeographic, matchedSpecial,
+    baseline, current,
+    delta: current != null && baseline != null ? (current - baseline) * 100 : null,
+    isFinal: contest.reported === contest.totalReportingUnits && contest.totalReportingUnits > 0
+      && matched === contest.units.length && unmatchedVotes === 0,
+  };
+}
+
 export const percent = (v: number | null | undefined) => v == null ? '—' : `${(v * 100).toFixed(1)}%`;
 export const points = (v: number | null | undefined) => v == null ? '—' : `${v > 0 ? '+' : ''}${v.toFixed(1)} pp`;
 export function comparisonColor(unit: ResultUnit | null, row: Comparison | undefined, mode: 'baseline' | 'variance') {
