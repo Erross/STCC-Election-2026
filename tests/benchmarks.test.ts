@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { buildSnapshot } from '../lib/election/adapter.ts';
-import { baselineFor, benchmarkOptions, buildComparisons, buildSpecialComparisons, currentTarget, summarizeComparisons, POSITIONS, comparisonColor, type Benchmarks } from '../lib/election/benchmarks.ts';
+import { baselineFor, benchmarkOptions, buildComparisons, buildSpecialComparisons, currentTarget, summarizeComparisons, summarizeOverallElectionComparison, POSITIONS, comparisonColor, type Benchmarks } from '../lib/election/benchmarks.ts';
 import type { Contest, Snapshot } from '../lib/election/types.ts';
 const history = JSON.parse(readFileSync(new URL('../public/data/historical-benchmarks.json', import.meta.url), 'utf8')) as Benchmarks;
 const seed = JSON.parse(readFileSync(new URL('../lib/election/seed.json', import.meta.url), 'utf8')) as Snapshot;
@@ -148,4 +148,58 @@ test('historical school-board absentee share uses verified slate candidate selec
   assert.equal(row.current, null);
   assert.equal(row.delta, null);
   assert.equal(buildComparisons(h, history, option, 'first').ABSENTEE.baseline, null);
+});
+
+test('overall matched-unit swing uses current denominators and includes absentee without assigning geography', () => {
+  const c = structuredClone(h);
+  const option = benchmarkOptions(c, history).find(o => o.id === 'school-2026')!;
+  const yes = c.choices.find(x => x.name === 'YES')!, no = c.choices.find(x => x.name === 'NO')!;
+  const geo = c.units.find(u => u.geographic && history.school.find(s => s.year === '2026')?.units[u.id])!;
+  const absentee = c.units.find(u => u.id === 'ABSENTEE')!;
+  assert.ok(geo && absentee);
+  geo.votes = { [yes.id]: 80, [no.id]: 20 }; geo.totalVotes = 100;
+  absentee.votes = { [yes.id]: 30, [no.id]: 70 }; absentee.totalVotes = 100;
+  // A bucket absent from the historical election must not be imputed.
+  c.units.push({ id: 'CENTRAL 99', geographic: false, totalVotes: 50, votes: { [yes.id]: 10, [no.id]: 40 }, status: 'partial', turnout: null });
+  const geographic = buildComparisons(c, history, option, 'first');
+  const special = buildSpecialComparisons(c, history, option, 'first');
+  const result = summarizeOverallElectionComparison(c, geographic, special);
+  assert.equal(result.matched, 2);
+  assert.equal(result.matchedGeographic, 1);
+  assert.equal(result.matchedSpecial, 1);
+  assert.equal(result.votes, 200);
+  assert.equal(result.allCurrentVotes, 250);
+  assert.equal(result.unmatchedVotes, 50);
+  assert.deepEqual(result.unmatched, ['CENTRAL 99']);
+  near(result.coverage, .8);
+  near(result.current, .55);
+  near(result.baseline, (geographic[geo.id].baseline! + special.ABSENTEE.baseline!) / 2);
+  near(result.delta, (result.current! - result.baseline!) * 100);
+  assert.equal(result.isFinal, false);
+  // Original polygon-only comparison remains restricted to geographic units.
+  assert.equal(geographic.ABSENTEE.baseline, null);
+});
+
+test('overall election swing with zero comparison votes remains unknown, never 0%', () => {
+  const option = benchmarkOptions(h, history).find(o => o.id === 'school-2026')!;
+  const result = summarizeOverallElectionComparison(
+    h, buildComparisons(h, history, option, 'first'),
+    buildSpecialComparisons(h, history, option, 'first'),
+  );
+  assert.equal(result.current, null);
+  assert.equal(result.baseline, null);
+  assert.equal(result.delta, null);
+  assert.equal(result.coverage, null);
+  assert.equal(result.votes, 0);
+  assert.equal(result.matched, 0);
+  assert.equal(result.isFinal, false);
+});
+
+test('overall comparison refuses duplicate accounting unit IDs', () => {
+  const c = structuredClone(h);
+  const option = benchmarkOptions(c, history)[0];
+  c.units.push({ ...c.units[0] });
+  assert.throws(() => summarizeOverallElectionComparison(c,
+    buildComparisons(c, history, option, 'first'),
+    buildSpecialComparisons(c, history, option, 'first')), /Duplicate reporting unit/);
 });
