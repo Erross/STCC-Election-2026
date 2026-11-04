@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { buildSnapshot } from '../lib/election/adapter.ts';
-import { baselineFor, benchmarkOptions, buildComparisons, currentTarget, summarizeComparisons, POSITIONS, comparisonColor, type Benchmarks } from '../lib/election/benchmarks.ts';
+import { baselineFor, benchmarkOptions, buildComparisons, buildSpecialComparisons, currentTarget, summarizeComparisons, POSITIONS, comparisonColor, type Benchmarks } from '../lib/election/benchmarks.ts';
 import type { Contest, Snapshot } from '../lib/election/types.ts';
 const history = JSON.parse(readFileSync(new URL('../public/data/historical-benchmarks.json', import.meta.url), 'utf8')) as Benchmarks;
 const seed = JSON.parse(readFileSync(new URL('../lib/election/seed.json', import.meta.url), 'utf8')) as Snapshot;
@@ -120,4 +120,32 @@ test('archived general races retain only their explicitly labeled D/R choices an
   assert.equal(option.year, '2022');
   assert.ok(summarizeComparisons(buildComparisons(house, history, option, 'first', snapshot.date)).matched >= 30);
   assert.equal(makeArchiveSnapshot('unknown-year', history, seed), null);
+});
+
+test('non-geographic general results compare only matching historical accounting units', () => {
+  const house = seed.contests.find(c => c.sourceName === 'US REPRESENTATIVE DISTRICT 3')!;
+  const option = benchmarkOptions(house, history).find(o => o.id === 'office-2024')!;
+  const rows = buildSpecialComparisons(house, history, option, 'first');
+  const race = history.general.find(g => g.year === '2024')!.races.find(r => r.name === house.sourceName)!;
+  for (const unit of house.units.filter(u => !u.geographic)) {
+    assert.ok(rows[unit.id]);
+    const pair = race.allUnits[unit.id];
+    if (pair && pair[0] + pair[1] > 0) near(rows[unit.id].baseline, pair[0] / (pair[0] + pair[1]));
+    assert.equal(rows[unit.id].current, null, 'No swing can be invented from the zero report');
+    assert.equal(buildComparisons(house, history, option, 'first')[unit.id].baseline, null, 'Mapped comparison remains geographic only');
+  }
+});
+
+test('historical school-board absentee share uses verified slate candidate selections', () => {
+  const option = benchmarkOptions(h, history).find(o => o.id === 'school-2025')!;
+  const row = buildSpecialComparisons(h, history, option, 'first').ABSENTEE;
+  const school = history.school.find(s => s.year === '2025')!;
+  const values = school.archive.units.ABSENTEE;
+  const sum = (names: string[]) => school.archive.candidates.reduce((n, name, i) => n + (names.includes(name) ? values[i] : 0), 0);
+  const progressive = sum(school.candidates.progressive);
+  const conservative = sum(school.candidates.conservative);
+  near(row.baseline, progressive / (progressive + conservative));
+  assert.equal(row.current, null);
+  assert.equal(row.delta, null);
+  assert.equal(buildComparisons(h, history, option, 'first').ABSENTEE.baseline, null);
 });
