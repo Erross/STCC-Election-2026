@@ -8,28 +8,24 @@ import { calculateSwingPoints, swingDirection, swingEligibleRaces, SWING_ALL, ty
 
 const display = (v: number | null) => v == null ? '—' : (v > 0 ? '+' : '') + v.toFixed(1) + ' pp';
 
-/** A fixed, accessible SVG design, not a font glyph. Larger swings get larger arrows.
- * SVG markup contains only our own static path geometry and bounded numbers.
+/** Editorial arrow mark: a clean diagonal vector with a thin white keyline,
+ * not a circular map pin. Icon size varies modestly with absolute swing.
  */
 export function swingMarkerSvg(direction: 'democratic' | 'republican' | 'neutral', magnitude = 0): string {
-  const size = Math.round(26 + Math.min(18, Math.max(0, magnitude)) * 0.9);
-  const color = direction === 'democratic' ? '#2269be' : direction === 'republican' ? '#c33c48' : '#80929b';
   if (direction === 'neutral') {
-    return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" width="56" height="56" aria-hidden="true">'
-      + '<circle cx="28" cy="28" r="10" fill="white" stroke="#d0dce1" stroke-width="2"/>'
-      + '<circle cx="28" cy="28" r="4.5" fill="#80929b"/></svg>';
+    return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true">'
+      + '<circle cx="20" cy="20" r="3" fill="#7c909d" stroke="#fff" stroke-width="1.6"/></svg>';
   }
-  // The same 45-degree arrow geometry is reflected to point northwest for D.
-  const reflection = direction === 'democratic' ? ' transform="translate(56 0) scale(-1 1)"' : '';
-  // Scale the medallion around its center within a fixed 56 px Leaflet marker.
-  const scale = (size / 52).toFixed(3);
-  return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" width="56" height="56" aria-hidden="true">'
-    + '<g transform="translate(28 28) scale(' + scale + ') translate(-28 -28)">'
-    + '<circle cx="28" cy="28" r="25" fill="white" fill-opacity=".94" stroke="#bdcbd1" stroke-width="1.4"/>'
-    + '<g' + reflection + '>'
-    + '<path d="M14 42 L40 16 M22 16 H40 V34" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>'
-    + '<path d="M14 42 L40 16 M22 16 H40 V34" fill="none" stroke="' + color
-    + '" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>'
+  const color = direction === 'democratic' ? '#2868a8' : '#bc4851';
+  const scale = (0.63 + Math.min(18, Math.max(0, magnitude)) / 18 * 0.32).toFixed(3);
+  // Draw once in the northeast direction and mirror for Democratic shifts.
+  const reflect = direction === 'democratic' ? ' transform="translate(40 0) scale(-1 1)"' : '';
+  const geometry = 'M12 28 L28 12 M18 12 H28 V22';
+  return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true">'
+    + '<g transform="translate(20 20) scale(' + scale + ') translate(-20 -20)">'
+    + '<g' + reflect + '>'
+    + '<path d="' + geometry + '" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>'
+    + '<path d="' + geometry + '" fill="none" stroke="' + color + '" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>'
     + '</g></g></svg>';
 }
 
@@ -73,40 +69,66 @@ function ArrowMap({ points }: { points: SwingPoint[] }) {
     return () => { disposed = true; abort.abort(); observer?.disconnect(); map.current?.remove(); map.current = null; };
   }, []);
   useEffect(() => {
-    if (!ready || !api.current || !boundaries.current || !markers.current) return;
-    const L = api.current, group = markers.current;
-    group.clearLayers();
+    if (!ready || !api.current || !boundaries.current || !markers.current || !map.current) return;
+    const L = api.current;
+    const m = map.current;
+    const group = markers.current;
     const byId = new Map(points.map(p => [p.id, p]));
     boundaries.current.setStyle(feature => {
       const point = byId.get(String(feature?.properties?.DIST_NUM));
-      return { color: '#839eae', weight: 0.8, fillColor: point ? '#f4f7f8' : '#e2ebee', fillOpacity: 0.9 };
+      return { color: '#9baeb8', weight: 0.8, fillColor: point ? '#f6f8f9' : '#e8eff2', fillOpacity: 0.92 };
     });
+
+    // Preserve every precinct in the underlying boundary layer and table. At
+    // county-wide zoom, only declutter *markers*, prioritizing larger swings.
+    // Zooming in recalculates screen-space overlap and reveals more arrows.
+    const items: { id: string; point: SwingPoint; center: Leaflet.LatLng }[] = [];
     boundaries.current.eachLayer(layer => {
       const feature = (layer as Leaflet.Layer & { feature?: GeoJSON.Feature }).feature;
       const id = String(feature?.properties?.DIST_NUM ?? '');
       const point = byId.get(id);
       if (!point || point.delta == null) return;
-      const direction = swingDirection(point.delta);
-      const magnitude = Math.abs(point.delta);
-      const marker = L.marker((layer as Leaflet.Polygon).getBounds().getCenter(), {
-        icon: L.divIcon({
-          html: swingMarkerSvg(direction, magnitude),
-          className: 'swing-arrow-icon swing-arrow-icon-' + direction,
-          iconSize: [56, 56],
-          iconAnchor: [28, 28],
-        }),
-        keyboard: true,
-      });
-      const label = 'Precinct ' + id + ': ' + display(point.delta) + ' toward ' + (direction === 'democratic' ? 'Democrats' : direction === 'republican' ? 'Republicans' : 'neither side') + '; ' + point.races + ' comparable ' + (point.races === 1 ? 'race' : 'races');
-      marker.bindTooltip(label, { direction: 'top' });
-      const popup = document.createElement('div');
-      const heading = document.createElement('strong'); heading.textContent = 'Precinct ' + id; popup.appendChild(heading);
-      const detail = document.createElement('p');
-      detail.textContent = '2026 mean D share: ' + (point.current! * 100).toFixed(1) + '%; 2024 benchmark: ' + (point.baseline! * 100).toFixed(1) + '%; shift: ' + display(point.delta) + '. ' + point.races + ' comparable races.';
-      popup.appendChild(detail);
-      marker.bindPopup(popup);
-      marker.addTo(group);
+      items.push({ id, point, center: (layer as Leaflet.Polygon).getBounds().getCenter() });
     });
+    const update = () => {
+      group.clearLayers();
+      const occupied: { x: number; y: number }[] = [];
+      const minDistance = m.getZoom() >= 13 ? 15 : m.getZoom() >= 12 ? 22 : 30;
+      const visible = items.filter(item => m.getBounds().contains(item.center))
+        .sort((a, b) => Math.abs(b.point.delta!) - Math.abs(a.point.delta!));
+      for (const item of visible) {
+        const pixel = m.latLngToContainerPoint(item.center);
+        if (occupied.some(p => Math.abs(p.x - pixel.x) < minDistance && Math.abs(p.y - pixel.y) < minDistance)) continue;
+        occupied.push({ x: pixel.x, y: pixel.y });
+        const direction = swingDirection(item.point.delta);
+        const marker = L.marker(item.center, {
+          icon: L.divIcon({
+            html: swingMarkerSvg(direction, Math.abs(item.point.delta!)),
+            className: 'swing-arrow-icon swing-arrow-icon-' + direction,
+            iconSize: [40, 40], iconAnchor: [20, 20],
+          }),
+          keyboard: true,
+        });
+        const label = 'Precinct ' + item.id + ': ' + display(item.point.delta)
+          + ' toward ' + (direction === 'democratic' ? 'Democrats' : direction === 'republican' ? 'Republicans' : 'neither side')
+          + '; ' + item.point.races + ' comparable ' + (item.point.races === 1 ? 'race' : 'races');
+        marker.bindTooltip(label, { direction: 'top' });
+        const popup = document.createElement('div');
+        const heading = document.createElement('strong');
+        heading.textContent = 'Precinct ' + item.id;
+        popup.appendChild(heading);
+        const detail = document.createElement('p');
+        detail.textContent = '2026 mean D share: ' + (item.point.current! * 100).toFixed(1)
+          + '%; 2024 benchmark: ' + (item.point.baseline! * 100).toFixed(1)
+          + '%; shift: ' + display(item.point.delta) + '. ' + item.point.races + ' comparable races.';
+        popup.appendChild(detail);
+        marker.bindPopup(popup);
+        marker.addTo(group);
+      }
+    };
+    m.on('zoomend moveend resize', update);
+    update();
+    return () => { m.off('zoomend moveend resize', update); group.clearLayers(); };
   }, [ready, points]);
   return <div className="swing-map-wrap"><div ref={element} className="swing-map-canvas" role="img" aria-label="St. Charles County precinct map with partisan swing arrows" />{!ready && <p role="status" className="map-loading">{error ?? 'Loading precinct map…'}</p>}</div>;
 }
@@ -120,7 +142,7 @@ export default function SwingMap({ contests, benchmarks, date }: { contests: Con
   const chosenRace = eligible.find(c => c.id === selected);
   const sameOffice = chosenRace && benchmarks?.general.find(g => g.year === '2024')?.races.some(r => r.name.replace(/[^A-Z0-9]/g, '') === chosenRace.sourceName.replace(/[^A-Z0-9]/g, ''));
   return <section className="swing-view" aria-label="Precinct swing map">
-    <div className="swing-heading"><div><span className="eyebrow">VOTE SHIFT · 2024 TO {date.slice(0, 4)}</span><h2>Which way did each precinct move?</h2><p>Arrows show percentage-point change in Democratic two-party share. Blue northwest = more Democratic; red northeast = more Republican.</p></div></div>
+    <div className="swing-heading"><div><span className="eyebrow">VOTE SHIFT · 2024 TO {date.slice(0, 4)}</span><h2>Which way did each precinct move?</h2><p>Arrows show percentage-point change in Democratic two-party share. Blue northwest = more Democratic; red northeast = more Republican. Zoom in to see arrows in denser areas.</p></div></div>
     <div className="swing-controls"><label htmlFor="swing-race">Show swing for</label><select id="swing-race" value={selected} onChange={e => setRace(e.target.value)}><option value={SWING_ALL}>All contested D/R races · equal-weight average</option>{eligible.map(c => <option key={c.id} value={c.id}>{c.title} · {c.jurisdiction}</option>)}</select></div>
     {!benchmarks ? <p role="status">Historical comparison data is not yet available.</p> : <>
       <div className="swing-stats"><div><span>Precincts with comparable votes</span><strong>{points.length}</strong></div><div><span>Shifted toward Democrats</span><strong>{positive}</strong></div><div><span>Shifted toward Republicans</span><strong>{negative}</strong></div></div>
