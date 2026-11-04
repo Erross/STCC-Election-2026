@@ -10,10 +10,13 @@ export function createFeed(env: { DB: D1Database }) {
 function database() { if (!env.DB) throw new Error('Results database is not configured'); return env.DB; }
 
 async function readState(db: D1Database): Promise<StateRow> {
-  await db.prepare('INSERT INTO election_state (id, snapshot) VALUES (?, ?) ON CONFLICT(id) DO NOTHING').bind(ELECTION_ID, JSON.stringify(seed)).run();
+  // Avoid serializing and writing the large seed for every read-only API hit.
   const row = await db.prepare('SELECT * FROM election_state WHERE id = ?').bind(ELECTION_ID).first<StateRow>();
-  if (!row) throw new Error('Could not initialize election state');
-  return row;
+  if (row) return row;
+  await db.prepare('INSERT INTO election_state (id, snapshot) VALUES (?, ?) ON CONFLICT(id) DO NOTHING').bind(ELECTION_ID, JSON.stringify(seed)).run();
+  const initialized = await db.prepare('SELECT * FROM election_state WHERE id = ?').bind(ELECTION_ID).first<StateRow>();
+  if (!initialized) throw new Error('Could not initialize election state');
+  return initialized;
 }
 async function upstream(url: string, maxBytes: number) {
   const response = await fetch(url, { headers: { 'User-Agent': 'STCC-Election-Tracker/1.0', 'Cache-Control': 'no-cache' }, cache: 'no-store', signal: AbortSignal.timeout(15_000) });
