@@ -79,6 +79,61 @@ export function buildComparisons(c: Contest, history: Benchmarks, option: Benchm
   }
   return result;
 }
+/**
+ * Separately compare named non-geographic reporting units (ABSENTEE, CENTRAL 1/2).
+ * Unlike mapped precincts these are accounting buckets, not locations, and their
+ * membership can differ across election years. Never merge into map comparisons.
+ */
+export function buildSpecialComparisons(c: Contest, history: Benchmarks, option: BenchmarkOption, alignment: Alignment, currentDate = '2026-11-03'): Record<string, Comparison> {
+  const target = currentTarget(c, option, alignment, history, currentDate.slice(0, 4));
+  const output: Record<string, Comparison> = {};
+  const school = option.kind === 'school' ? history.school.find(s => s.year === option.year) : undefined;
+  const general = option.kind !== 'school' ? history.general.find(g => g.year === option.year) : undefined;
+  const candidates = school?.archive.candidates ?? [];
+  const selectedNames = school?.candidates[alignment === 'first' ? 'progressive' : 'conservative'] ?? [];
+  const bothNames = school ? [...school.candidates.progressive, ...school.candidates.conservative] : [];
+  const normalize = (name: string) => name.toUpperCase().replace(/[^A-Z0-9]/g, '');
+
+  for (const unit of c.units.filter(u => !u.geographic)) {
+    let baseline: number | null = null;
+    let races: string[] = [];
+    if (school) {
+      const values = school.archive.units[unit.id];
+      if (values) {
+        const denominator = candidates.reduce((n, name, i) => n + (bothNames.includes(name) ? values[i] ?? 0 : 0), 0);
+        if (denominator > 0) {
+          baseline = candidates.reduce((n, name, i) => n + (selectedNames.includes(name) ? values[i] ?? 0 : 0), 0) / denominator;
+          races = ['FH Forward / FH Families school-board selections'];
+        }
+      }
+    } else if (general) {
+      const candidates = option.kind === 'office'
+        ? general.races.filter(r => normalize(r.name) === normalize(option.sourceName ?? ''))
+        : general.races;
+      const valid = candidates.filter(r => {
+        const pair = r.allUnits[unit.id];
+        return pair && pair[0] + pair[1] > 0;
+      });
+      if (valid.length) {
+        baseline = valid.reduce((sum, r) => {
+          const pair = r.allUnits[unit.id];
+          return sum + pair[alignment === 'first' ? 0 : 1] / (pair[0] + pair[1]);
+        }, 0) / valid.length;
+        races = valid.map(r => r.name);
+      }
+    }
+    const votes = target.denominator.reduce((n, id) => n + (unit.votes[id] ?? 0), 0);
+    const current = target.available && votes > 0
+      ? target.numerator.reduce((n, id) => n + (unit.votes[id] ?? 0), 0) / votes
+      : null;
+    output[unit.id] = {
+      baseline, current, delta: baseline != null && current != null ? (current - baseline) * 100 : null,
+      votes, races,
+    };
+  }
+  return output;
+}
+
 export function summarizeComparisons(rows: Record<string, Comparison>) {
   const eligible = Object.values(rows).filter(r => r.baseline != null);
   const matched = eligible.filter(r => r.current != null && r.votes > 0);
