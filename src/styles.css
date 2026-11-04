@@ -31,7 +31,7 @@
 @media(max-width:850px){.race-view-switch{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}.race-view-switch button{min-height:48px;padding:10px 8px;font-size:13px}.drawer-group{display:grid;gap:6px;padding:0 14px 14px;font-size:12px;color:#617985}.drawer-group select{min-height:44px;padding:10px;border:1px solid #cbd9dc;border-radius:6px;background:white;color:#244b5e;font-size:16px;width:100%}.chamber-heading{padding:20px 16px}.chamber-heading h2{font-size:28px}.chamber-heading .eyebrow{font-size:10px}.chamber-counts{padding:14px 10px;gap:10px}.chamber-counts span{font-size:11px;line-height:1.5}.chamber-counts b{font-size:24px}.chamber-heading .chamber-caveat{font-size:13px}.chamber-compare{padding:0 16px}.chamber-compare>summary{font-size:14px;line-height:1.5;min-height:60px;padding:9px 0}.chamber-compare-controls{grid-template-columns:1fr}.chamber-compare-controls label{font-size:12px}.chamber-compare p{font-size:13px}.chamber-map-toolbar{align-items:flex-start;flex-direction:column;padding:14px 12px}.chamber-map-toolbar h3{font-size:16px}.chamber-map-toolbar label{width:100%;justify-content:space-between}.chamber-map-toolbar select{max-width:none;flex:1;min-height:46px}.chamber-races .section-title{flex-direction:column;gap:5px}.chamber-races .section-title h3{font-size:17px}.district-card-grid{grid-template-columns:1fr;gap:12px}.district-card{padding:16px}.district-card-heading h3,.district-card-heading h4{font-size:18px}.district-card-heading>span{font-size:12px}.district-candidates>div>span:first-child{font-size:14px}.district-candidates small{font-size:11px}.district-candidates b{font-size:16px}.district-candidates>div>span:last-child small{font-size:13px}.open-district{font-size:14px;min-height:48px}.district-comparison>span,.district-comparison small{font-size:11px}.district-comparison b{font-size:21px}.chamber-precinct-detail{padding:16px 12px}.chamber-detail-heading p{font-size:13px}.chamber-map-section .map-help{font-size:12px}.chamber-compare .comparison-actions button:last-child{grid-column:auto}}
 
 
-/* County swing arrows: SVG-free, accessible markers over authoritative precinct outlines. */
+/* Editorial SVG swing arrows on verified precinct boundaries. */
 .swing-view { display: grid; gap: 1rem; min-width: 0; }
 .swing-heading h2 { margin: .3rem 0; font-size: clamp(1.35rem, 2vw, 1.85rem); color: #153247; }
 .swing-heading p, .swing-method { color: #536e7a; line-height: 1.6; font-size: .88rem; }
@@ -46,14 +46,14 @@
 .swing-map-wrap { position: relative; width: 100%; }
 .swing-map-canvas { height: clamp(370px, 53vw, 600px); width: 100%; border: 1px solid #d1dde2; border-radius: 7px; background: #e2ebee; z-index: 0; }
 .swing-arrow-icon { border: 0 !important; background: transparent !important; }
-.swing-arrow-icon svg { display: block; overflow: visible; filter: drop-shadow(0 2px 2px rgba(19, 48, 67, .24)); }
+.swing-arrow-icon svg { display: block; overflow: visible; filter: drop-shadow(0 1px 1px rgba(27, 49, 60, .14)); }
 .swing-arrow-icon-democratic { z-index: 1; }
 .swing-arrow-icon-republican { z-index: 1; }
 .swing-legend { display: flex; flex-wrap: wrap; gap: .6rem 1.4rem; font-size: .76rem; color: #536b79; }
-.swing-legend-dem { color: #2269be; font-weight: 750; }
-.swing-legend-rep { color: #c33c48; font-weight: 750; }
+.swing-legend-dem { color: #2868a8; font-weight: 750; }
+.swing-legend-rep { color: #bc4851; font-weight: 750; }
 .swing-legend-dem, .swing-legend-rep { display: inline-flex; gap: 4px; align-items: center; }
-.swing-legend-dem svg, .swing-legend-rep svg { width: 34px; height: 34px; display: block; }
+.swing-legend-dem svg, .swing-legend-rep svg { width: 26px; height: 26px; display: block; }
 .swing-table { border: 1px solid #d4dfe3; border-radius: 6px; background: white; padding: .7rem 1rem; }
 .swing-table h3 { margin: .2rem 0 .8rem; font-size: 1rem; }
 .swing-table-scroll { max-height: 300px; overflow: auto; }
