@@ -11,13 +11,13 @@ const display = (v: number | null) => v == null ? '—' : (v > 0 ? '+' : '') + v
 /** Editorial arrow mark: a clean diagonal vector with a thin white keyline,
  * not a circular map pin. Icon size varies modestly with absolute swing.
  */
-export function swingMarkerSvg(direction: 'democratic' | 'republican' | 'neutral', magnitude = 0): string {
+export function swingMarkerSvg(direction: 'democratic' | 'republican' | 'neutral', magnitude = 0, zoomScale = 1): string {
   if (direction === 'neutral') {
     return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true">'
       + '<circle cx="20" cy="20" r="3" fill="#7c909d" stroke="#fff" stroke-width="1.6"/></svg>';
   }
   const color = direction === 'democratic' ? '#2868a8' : '#bc4851';
-  const scale = (0.63 + Math.min(18, Math.max(0, magnitude)) / 18 * 0.32).toFixed(3);
+  const scale = ((0.63 + Math.min(18, Math.max(0, magnitude)) / 18 * 0.32) * Math.max(0.45, Math.min(1.3, zoomScale))).toFixed(3);
   // Draw once in the northeast direction and mirror for Democratic shifts.
   const reflect = direction === 'democratic' ? ' transform="translate(40 0) scale(-1 1)"' : '';
   const geometry = 'M12 28 L28 12 M18 12 H28 V22';
@@ -79,9 +79,9 @@ function ArrowMap({ points }: { points: SwingPoint[] }) {
       return { color: '#9baeb8', weight: 0.8, fillColor: point ? '#f6f8f9' : '#e8eff2', fillOpacity: 0.92 };
     });
 
-    // Preserve every precinct in the underlying boundary layer and table. At
-    // county-wide zoom, only declutter *markers*, prioritizing larger swings.
-    // Zooming in recalculates screen-space overlap and reveals more arrows.
+    // Render every eligible precinct marker, even when neighboring markers overlap.
+    // At county scale, make each vector smaller; zooming enlarges it.
+    // Never suppress a valid swing because of screen-space collisions.
     const items: { id: string; point: SwingPoint; center: Leaflet.LatLng }[] = [];
     boundaries.current.eachLayer(layer => {
       const feature = (layer as Leaflet.Layer & { feature?: GeoJSON.Feature }).feature;
@@ -92,18 +92,13 @@ function ArrowMap({ points }: { points: SwingPoint[] }) {
     });
     const update = () => {
       group.clearLayers();
-      const occupied: { x: number; y: number }[] = [];
-      const minDistance = m.getZoom() >= 13 ? 15 : m.getZoom() >= 12 ? 22 : 30;
-      const visible = items.filter(item => m.getBounds().contains(item.center))
-        .sort((a, b) => Math.abs(b.point.delta!) - Math.abs(a.point.delta!));
+      const zoomScale = m.getZoom() >= 13 ? 1 : m.getZoom() >= 12 ? 0.85 : m.getZoom() >= 11 ? 0.72 : 0.60;
+      const visible = items.filter(item => m.getBounds().contains(item.center));
       for (const item of visible) {
-        const pixel = m.latLngToContainerPoint(item.center);
-        if (occupied.some(p => Math.abs(p.x - pixel.x) < minDistance && Math.abs(p.y - pixel.y) < minDistance)) continue;
-        occupied.push({ x: pixel.x, y: pixel.y });
         const direction = swingDirection(item.point.delta);
         const marker = L.marker(item.center, {
           icon: L.divIcon({
-            html: swingMarkerSvg(direction, Math.abs(item.point.delta!)),
+            html: swingMarkerSvg(direction, Math.abs(item.point.delta!), zoomScale),
             className: 'swing-arrow-icon swing-arrow-icon-' + direction,
             iconSize: [40, 40], iconAnchor: [20, 20],
           }),
@@ -142,12 +137,12 @@ export default function SwingMap({ contests, benchmarks, date }: { contests: Con
   const chosenRace = eligible.find(c => c.id === selected);
   const sameOffice = chosenRace && benchmarks?.general.find(g => g.year === '2024')?.races.some(r => r.name.replace(/[^A-Z0-9]/g, '') === chosenRace.sourceName.replace(/[^A-Z0-9]/g, ''));
   return <section className="swing-view" aria-label="Precinct swing map">
-    <div className="swing-heading"><div><span className="eyebrow">VOTE SHIFT · 2024 TO {date.slice(0, 4)}</span><h2>Which way did each precinct move?</h2><p>Arrows show percentage-point change in Democratic two-party share. Blue northwest = more Democratic; red northeast = more Republican. Zoom in to see arrows in denser areas.</p></div></div>
+    <div className="swing-heading"><div><span className="eyebrow">VOTE SHIFT · 2024 TO {date.slice(0, 4)}</span><h2>Which way did each precinct move?</h2><p>Arrows show percentage-point change in Democratic two-party share. Blue northwest = more Democratic; red northeast = more Republican. All reported precincts have arrows; zoom in to separate closely spaced markers.</p></div></div>
     <div className="swing-controls"><label htmlFor="swing-race">Show swing for</label><select id="swing-race" value={selected} onChange={e => setRace(e.target.value)}><option value={SWING_ALL}>All contested D/R races · equal-weight average</option>{eligible.map(c => <option key={c.id} value={c.id}>{c.title} · {c.jurisdiction}</option>)}</select></div>
     {!benchmarks ? <p role="status">Historical comparison data is not yet available.</p> : <>
       <div className="swing-stats"><div><span>Precincts with comparable votes</span><strong>{points.length}</strong></div><div><span>Shifted toward Democrats</span><strong>{positive}</strong></div><div><span>Shifted toward Republicans</span><strong>{negative}</strong></div></div>
       <ArrowMap points={points} />
-      <div className="swing-legend"><span className="swing-legend-dem"><span aria-hidden="true" dangerouslySetInnerHTML={{ __html: swingMarkerSvg('democratic', 12) }} /> Toward Democrats</span><span className="swing-legend-rep"><span aria-hidden="true" dangerouslySetInnerHTML={{ __html: swingMarkerSvg('republican', 12) }} /> Toward Republicans</span><span>Arrow size = magnitude, capped at 18 pp</span><span>Unreported / unmatched precincts have no arrow</span></div>
+      <div className="swing-legend"><span className="swing-legend-dem"><span aria-hidden="true" dangerouslySetInnerHTML={{ __html: swingMarkerSvg('democratic', 12) }} /> Toward Democrats</span><span className="swing-legend-rep"><span aria-hidden="true" dangerouslySetInnerHTML={{ __html: swingMarkerSvg('republican', 12) }} /> Toward Republicans</span><span>Arrow size = magnitude, capped at 18 pp</span><span>Every comparable precinct has an arrow; missing data has none</span></div>
       <p className="swing-method"><strong>Method:</strong> {selected === SWING_ALL ? 'Each precinct receives the arithmetic mean of available race-level swings, giving each contested D/R race one equal vote in the average. Only published precinct D/R votes count; a district contest is not extrapolated outside its electorate.' : sameOffice ? 'This race is compared with the same office in the 2024 audited results where a matching precinct exists.' : 'This race is compared with the 2024 audited equal-weight D/R race average for the same precinct (not a same-office result).'} 2024 values are historical comparisons, not a prediction. Absentee and central units are excluded because they have no precinct geography. The set of races contributing to the all-races average varies by precinct, and arrows are provisional while reporting continues.</p>
       <div className="swing-table"><h3>Precinct shifts</h3><div className="swing-table-scroll"><table><thead><tr><th>Precinct</th><th>Direction</th><th>Change</th><th>Races</th></tr></thead><tbody>{points.map(p => <tr key={p.id}><td>{p.id}</td><td>{swingDirection(p.delta) === 'democratic' ? 'Toward D' : swingDirection(p.delta) === 'republican' ? 'Toward R' : 'No change'}</td><td>{display(p.delta)}</td><td>{p.races}</td></tr>)}</tbody></table></div></div>
     </>}
