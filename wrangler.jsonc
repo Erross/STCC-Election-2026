@@ -20,7 +20,7 @@
   ],
   "triggers": {
     "crons": [
-      "0 * * * *"
+      "* * * * *"
     ]
   },
   "account_id": "e8ec876664df92bfde2c8edb6320d370"
