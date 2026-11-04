@@ -27,7 +27,9 @@ export default {
       }
       if (request.method !== 'GET') { headers.set('Allow', path === '/api/refresh' ? 'POST, OPTIONS' : 'GET, OPTIONS'); return json({ error: 'Method not allowed' }, 405); }
       if (path === '/api/results') {
-        const data = await feed.getFeed();
+        // Never block a public result request on county downloads or CSV/XML parsing.
+        // The minute cron refreshes D1; readers only retrieve the last validated snapshot.
+        const data = await feed.getFeed(false);
         const tag = '"' + await hashContent({ hash: data.snapshot.dataHash, health: data.health }) + '"';
         headers.set('ETag', tag);
         if (request.headers.get('If-None-Match') === tag) return new Response(null, { status: 304, headers });
